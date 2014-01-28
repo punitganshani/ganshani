@@ -1,0 +1,5 @@
+c:\users\punit\documents\visual studio 2010\Projects\Serializers\Serializers\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\punit\documents\visual studio 2010\Projects\Serializers\Serializers\bin\Debug\Serializers.exe
+c:\users\punit\documents\visual studio 2010\Projects\Serializers\Serializers\bin\Debug\Serializers.pdb
+c:\users\punit\documents\visual studio 2010\Projects\Serializers\Serializers\obj\x86\Debug\Serializers.exe
+c:\users\punit\documents\visual studio 2010\Projects\Serializers\Serializers\obj\x86\Debug\Serializers.pdb

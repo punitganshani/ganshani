@@ -1,0 +1,41 @@
+﻿﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfEmployee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Employee>
+    <Name>Tim</Name>
+    <EmployeeId>1392902</EmployeeId>
+  </Employee>
+  <Employee>
+    <Name>Shawn</Name>
+    <EmployeeId>156902</EmployeeId>
+  </Employee>
+</ArrayOfEmployee>
+
+
+<ArrayOfEmployee xmlns="http://schemas.datacontract.org/2004/07/Serializers" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  <Employee>
+    <EmployeeId>1392902</EmployeeId>
+    <Name>Tim</Name>
+  </Employee>
+  <Employee>
+    <EmployeeId>156902</EmployeeId>
+    <Name>Shawn</Name>
+  </Employee>
+</ArrayOfEmployee>
+
+
+<ArrayOfEmployee z:Id="1" z:Type="System.Collections.Generic.List`1[[Serializers.Employee, Serializers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" z:Assembly="0" xmlns="http://schemas.datacontract.org/2004/07/Serializers" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/">
+  <_items z:Id="2" z:Size="4">
+    <Employee z:Id="3">
+      <EmployeeId>1392902</EmployeeId>
+      <Name z:Id="4">Tim</Name>
+    </Employee>
+    <Employee z:Id="5">
+      <EmployeeId>156902</EmployeeId>
+      <Name z:Id="6">Shawn</Name>
+    </Employee>
+    <Employee i:nil="true"/>
+    <Employee i:nil="true"/>
+  </_items>
+  <_size>2</_size>
+  <_version>2</_version>
+</ArrayOfEmployee>
