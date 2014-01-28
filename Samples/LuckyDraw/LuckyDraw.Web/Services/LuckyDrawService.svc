@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="LuckyDraw.Web.Services.LuckyDrawService" CodeBehind="LuckyDrawService.svc.cs" %>

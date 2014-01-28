@@ -1,0 +1,5 @@
+C:\Punit Ganshani\Shaliesh\LuckyDraw\LuckyDraw.Web\bin\LuckyDraw.Web.dll
+C:\Punit Ganshani\Shaliesh\LuckyDraw\LuckyDraw.Web\bin\LuckyDraw.Web.pdb
+C:\Punit Ganshani\Shaliesh\LuckyDraw\LuckyDraw.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Punit Ganshani\Shaliesh\LuckyDraw\LuckyDraw.Web\obj\Debug\LuckyDraw.Web.dll
+C:\Punit Ganshani\Shaliesh\LuckyDraw\LuckyDraw.Web\obj\Debug\LuckyDraw.Web.pdb

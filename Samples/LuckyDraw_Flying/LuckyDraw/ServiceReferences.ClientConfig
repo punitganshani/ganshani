@@ -1,0 +1,20 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <customBinding>
+                <binding name="CustomBinding_LuckyDrawService">
+                    <binaryMessageEncoding />
+                    <httpTransport maxReceivedMessageSize="2147483647" 
+                                   maxBufferSize="2147483647" />
+                </binding>
+            </customBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://localhost:5203/Services/LuckyDrawService.svc"
+                binding="customBinding" 
+                bindingConfiguration="CustomBinding_LuckyDrawService"
+                contract="DataService.LuckyDrawService" 
+                name="CustomBinding_LuckyDrawService" />
+        </client>
+    </system.serviceModel>
+</configuration>

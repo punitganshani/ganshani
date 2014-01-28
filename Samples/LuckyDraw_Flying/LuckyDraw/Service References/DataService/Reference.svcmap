@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="eed7a645-2f40-40fa-a866-267227c24615" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:5203/Services/LuckyDrawService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="LuckyDrawService.xsd" MetadataType="Schema" ID="e042c902-dc0d-4be4-abaf-1a4177f5d452" SourceId="1" SourceUrl="http://localhost:5203/Services/LuckyDrawService.svc?xsd=xsd2" />
+    <MetadataFile FileName="LuckyDrawService.wsdl" MetadataType="Wsdl" ID="89c2e2d0-2764-43bd-97f1-e5651889a575" SourceId="1" SourceUrl="http://localhost:5203/Services/LuckyDrawService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="LuckyDrawService1.xsd" MetadataType="Schema" ID="2857ddb0-7077-46da-92e0-8c29c7fe4fd6" SourceId="1" SourceUrl="http://localhost:5203/Services/LuckyDrawService.svc?xsd=xsd3" />
+    <MetadataFile FileName="LuckyDrawService.disco" MetadataType="Disco" ID="231f9cb7-ba56-4758-9aa4-41f605a4e346" SourceId="1" SourceUrl="http://localhost:5203/Services/LuckyDrawService.svc?disco" />
+    <MetadataFile FileName="LuckyDrawService2.xsd" MetadataType="Schema" ID="87c30101-ee14-4c32-91ca-9deffe34b63b" SourceId="1" SourceUrl="http://localhost:5203/Services/LuckyDrawService.svc?xsd=xsd1" />
+    <MetadataFile FileName="LuckyDrawService3.xsd" MetadataType="Schema" ID="0efa3693-e258-40db-9b8e-ed118b4c100f" SourceId="1" SourceUrl="http://localhost:5203/Services/LuckyDrawService.svc?xsd=xsd0" />
+    <MetadataFile FileName="LuckyDrawService1.wsdl" MetadataType="Wsdl" ID="0c02559c-ddfc-4fcc-aaf1-483cc20277ef" SourceId="1" SourceUrl="http://localhost:5203/Services/LuckyDrawService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

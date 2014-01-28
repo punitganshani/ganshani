@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:5203/Services/LuckyDrawService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/LuckyDraw.Web.Contracts" />
+  <xs:element name="GetNames">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNamesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/LuckyDraw.Web.Contracts" minOccurs="0" name="GetNamesResult" nillable="true" type="q1:LuckyDrawParticipants" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

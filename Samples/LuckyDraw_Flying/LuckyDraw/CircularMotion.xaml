@@ -1,0 +1,39 @@
+﻿<UserControl x:Class="LuckyDraw.CircularMotion"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:custom="clr-namespace:LuckyDraw.Lib"
+    xmlns:dataInput="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data.Input" 
+    xmlns:inputToolkit="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Input.Toolkit"  
+    Width="1200" Height="1200">
+    <Canvas x:Name="MainCanvas"  Background="AliceBlue">
+		<Button x:Name="btnSpin" Click="btnSpin_Click" Content="Spin the wheel" Style="{StaticResource Style_SpinButton}" Canvas.Left="2" Margin="0" Canvas.Top="2" Width="289" Foreground="#FF1D0A49">
+			<Button.Background>
+				<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+					<GradientStop Color="#FF351E1E" Offset="0"/>
+					<GradientStop Color="#FFCC5656" Offset="1"/>
+				</LinearGradientBrush>
+			</Button.Background>
+			<Button.BorderBrush>
+				<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+					<GradientStop Color="#FFA3AEB9" Offset="0"/>
+					<GradientStop Color="#FF8399A9" Offset="0.375"/>
+					<GradientStop Color="#FF718597" Offset="0.375"/>
+					<GradientStop Color="#FF021523" Offset="1"/>
+				</LinearGradientBrush>
+			</Button.BorderBrush>
+		</Button>
+		<ListBox Style="{StaticResource RoundListBox_Style}" x:Name="DataWheel">
+			<ListBox.RenderTransform>
+				<RotateTransform x:Name="DataWheel_Rotate"  Angle="0" />
+			</ListBox.RenderTransform>
+			<ListBox.ItemsPanel>
+				<ItemsPanelTemplate  x:Name="RadialPanelItemTemplate">
+					<custom:RadialPanel  x:Name="RadialPanel1" Loaded="RadialPanel1_Loaded" ItemAlignment="Center" ItemOrientation="Rotated" />
+				</ItemsPanelTemplate>
+			</ListBox.ItemsPanel>
+		</ListBox>
+	</Canvas>
+</UserControl>
