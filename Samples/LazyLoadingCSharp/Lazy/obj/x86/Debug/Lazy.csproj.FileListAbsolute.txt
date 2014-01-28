@@ -1,0 +1,5 @@
+c:\users\punit\documents\visual studio 2010\Projects\Lazy\Lazy\bin\Debug\Lazy.exe
+c:\users\punit\documents\visual studio 2010\Projects\Lazy\Lazy\bin\Debug\Lazy.pdb
+c:\users\punit\documents\visual studio 2010\Projects\Lazy\Lazy\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\punit\documents\visual studio 2010\Projects\Lazy\Lazy\obj\x86\Debug\Lazy.exe
+c:\users\punit\documents\visual studio 2010\Projects\Lazy\Lazy\obj\x86\Debug\Lazy.pdb
