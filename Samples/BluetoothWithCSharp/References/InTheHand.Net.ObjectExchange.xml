@@ -1,0 +1,441 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>InTheHand.Net.ObjectExchange</name>
+    </assembly>
+    <members>
+        <member name="T:InTheHand.Net.ObexWebRequest">
+            <summary>
+            Provides an OBEX implementation of the <see cref="T:System.Net.WebRequest"/> class.
+            </summary>
+        </member>
+        <member name="M:InTheHand.Net.ObexWebRequest.#ctor(System.Uri)">
+            <summary>
+            Create a new Obex request with the specified <see cref="T:System.Uri"/>.
+            </summary>
+            <param name="requestUri"></param>
+            <remarks>Uri must use one of the following schemes - obex, obex-push, obex-ftp, obex-sync.
+            The host name must be the device address in short hex, or dotted hex notation - not the default representation using the colon separator</remarks>
+        </member>
+        <member name="M:InTheHand.Net.ObexWebRequest.GetRequestStream">
+            <summary>
+            Gets a Stream object to use to write request data.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:InTheHand.Net.ObexWebRequest.ReadFile(System.String)">
+            <summary>
+            Reads the contents of the specified file to the request stream.
+            </summary>
+            <param name="fileName">The filename (including the path) from which to read.</param>
+            <remarks>Provides an easy equivalent to manually writing the file contents to the request stream.</remarks>
+        </member>
+        <member name="M:InTheHand.Net.ObexWebRequest.GetResponse">
+            <summary>
+            Returns the OBEX server response.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:InTheHand.Net.ObexWebRequest.Headers">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.ObexWebRequest.Method">
+            <summary>
+            Gets or sets the method for the request.
+            </summary>
+            <remarks>For Object Exchange the method code is mapped to the equivalent HTTP style method.
+            For example "PUT", "GET" etc. In this version only "PUT" is supported and is the default value.</remarks>
+        </member>
+        <member name="P:InTheHand.Net.ObexWebRequest.ContentType">
+            <summary>
+            Gets or sets the value of the Type OBEX header.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.ObexWebRequest.ContentLength">
+            <summary>
+            Gets or sets the Length OBEX header.
+            <para><b>New in v1.5.51015</b></para>
+            </summary>
+            <remarks>This property is mandatory, if not set no data will be sent.
+            If you use the <see cref="M:InTheHand.Net.ObexWebRequest.ReadFile(System.String)"/> helper method this value is automatically populated with the size of the file that was read.</remarks>
+        </member>
+        <member name="P:InTheHand.Net.ObexWebRequest.Proxy">
+            <summary>
+            Not Supported - do not use, this will throw an exception.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.ObexWebRequest.RequestUri">
+            <summary>
+            Gets the original Uniform Resource Identifier (URI) of the request. 
+            </summary>
+            <remarks>For an ObexPush request the URI will use the "obex://" prefix, followed by the numerical device id in hex format.
+            The path section of the URI represents the remote filename of the pushed object. Subfolders are not supported. Some devices may only support specific object types e.g. V-Card.</remarks>
+        </member>
+        <member name="T:InTheHand.Net.ObexTransport">
+            <summary>
+            Supported network transports for Object Exchange.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.ObexTransport.IrDA">
+            <summary>
+            Infrared (IrDA)
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.ObexTransport.Bluetooth">
+            <summary>
+            Bluetooth
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.ObexStatusCode">
+            <summary>
+            Specifies the status codes returned for an Object Exchange (OBEX) operation.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.ObexStatusCode.Final">
+            <summary>
+            Applied to another code to indicate this is the only response or final response in a series.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.ObexStatusCode.Continue">
+            <summary>
+            Operation was successful, more data is expected.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.ObexStatusCode.Success">
+            <summary>
+            Operation completed successfully.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.ObexStatusCode.Created">
+            <summary>
+            File/Object was created.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.Mime.MediaTypeNames">
+            <summary>
+            Specifies the media type information for an object.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.Mime.MediaTypeNames.Image">
+            <summary>
+            Specifies the type of image data in an object.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Mime.MediaTypeNames.Image.Gif">
+            <summary>
+            Specifies that the image data is in Graphics Interchange Format (GIF).
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Mime.MediaTypeNames.Image.Jpg">
+            <summary>
+            Specifies that the image data is in Joint Photographic Experts Group (JPEG) format.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.Mime.MediaTypeNames.Text">
+            <summary>
+            Specifies the type of text data in an object.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Mime.MediaTypeNames.Text.Html">
+            <summary>
+            Specifies that the data is in HTML format.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Mime.MediaTypeNames.Text.Plain">
+            <summary>
+            Specifies that the data is in plain text format.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Mime.MediaTypeNames.Text.vCalendar">
+            <summary>
+            Specifies that the data is in vCalendar format.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Mime.MediaTypeNames.Text.vCard">
+            <summary>
+            Specifies that the data is in vCard format.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Mime.MediaTypeNames.Text.vMessage">
+            <summary>
+            Specifies that the data is in vMsg format.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Mime.MediaTypeNames.Text.vNote">
+            <summary>
+            Specifies that the data is in vNote format.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Mime.MediaTypeNames.Text.Xml">
+            <summary>
+            Specifies that the data is in XML format.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.Mime.MediaTypeNames.ObjectExchange">
+            <summary>
+            Specifies the type of Object Exchange specific data.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Mime.MediaTypeNames.ObjectExchange.Capabilities">
+            <summary>
+            Used to retrieve supported object types.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Mime.MediaTypeNames.ObjectExchange.FolderListing">
+            <summary>
+            Used to retrieve folder listing with OBEX FTP.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Mime.MediaTypeNames.ObjectExchange.ObjectProfile">
+            <summary>
+            Used to retrieve an object profile.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.ObexWebRequestCreate">
+            <summary>
+            Used to create a new web request for obex uri scheme
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.ObexListener">
+            <summary>
+            Provides a simple, programmatically controlled OBEX protocol listener.
+            </summary>
+        </member>
+        <member name="M:InTheHand.Net.ObexListener.#ctor">
+            <summary>
+            Initializes a new instance of the ObexListener class using the Bluetooth transport.
+            </summary>
+        </member>
+        <member name="M:InTheHand.Net.ObexListener.#ctor(InTheHand.Net.ObexTransport)">
+            <summary>
+            Initializes a new instance of the ObexListener class specifiying the transport to use.
+            </summary>
+        </member>
+        <member name="M:InTheHand.Net.ObexListener.Start">
+            <summary>
+            Allows this instance to receive incoming requests.
+            </summary>
+        </member>
+        <member name="M:InTheHand.Net.ObexListener.Stop">
+            <summary>
+            Causes this instance to stop receiving incoming requests.
+            </summary>
+        </member>
+        <member name="M:InTheHand.Net.ObexListener.Close">
+            <summary>
+            Shuts down the ObexListener.
+            </summary>
+        </member>
+        <member name="M:InTheHand.Net.ObexListener.GetContext">
+            <summary>
+            Waits for an incoming request and returns when one is received.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:InTheHand.Net.ObexListener.IsListening">
+            <summary>
+            Gets a value that indicates whether the <see cref="T:InTheHand.Net.ObexListener"/> has been started.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.ObexWebResponse">
+            <summary>
+            Provides an OBEX implementation of the <see cref="T:System.Net.WebResponse"/> class.
+            </summary>
+        </member>
+        <member name="M:InTheHand.Net.ObexWebResponse.GetResponseStream">
+            <summary>
+            Gets the stream used to read the body of the response from the server.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:InTheHand.Net.ObexWebResponse.WriteFile(System.String)">
+            <summary>
+            Writes the contents of the response to the specified file path.
+            </summary>
+            <param name="fileName">The filename (including the path) from which to read.</param>
+        </member>
+        <member name="M:InTheHand.Net.ObexWebResponse.Close">
+            <summary>
+            Frees the resources held by the response.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.ObexWebResponse.Headers">
+            <summary>
+            Gets the headers associated with this response from the server.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.ObexWebResponse.ContentLength">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.ObexWebResponse.ContentType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.ObexWebResponse.StatusCode">
+            <summary>
+            Returns a status code to indicate the outcome of the request.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.ObexListenerContext">
+            <summary>
+            Provides access to the request and response objects used by the <see cref="T:InTheHand.Net.ObexListener"/> class.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.ObexListenerContext.Request">
+            <summary>
+            Gets the <see cref="T:InTheHand.Net.ObexListenerRequest"/> that represents a client's request for a resource
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.ObexUri">
+            <summary>
+            Contains <see cref="T:System.Uri"/> helper functionality.
+            <para><b>New in v1.5.51015</b></para>
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.ObexUri.UriSchemeObex">
+            <summary>
+            Specifies that the URI is accessed through the Object Exchange (OBEX) protocol.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.ObexUri.UriSchemeObexPush">
+            <summary>
+            Specifies that the URI is accessed through the Object Exchange (OBEX) Push protocol.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.ObexUri.UriSchemeObexFtp">
+            <summary>
+            Specifies that the URI is accessed through the Object Exchange (OBEX) FTP protocol.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.ObexUri.UriSchemeObexSync">
+            <summary>
+            Specifies that the URI is accessed through the Object Exchange (OBEX) Sync protocol.
+            </summary>
+        </member>
+        <member name="M:InTheHand.Net.ObexUri.UnescapeDataString(System.String)">
+            <summary>
+            Converts a string to its unescaped representation.
+            </summary>
+            <param name="stringToUnescape">The string to unescape.</param>
+            <returns>The unescaped representation of stringToUnescape.</returns>
+        </member>
+        <member name="T:InTheHand.Net.ObexMethod">
+            <summary>
+            Methods which can be carried out in an Object Exchange transaction.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.ObexMethod.Put">
+            <summary>
+            Sends an object to a receiving device.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.ObexMethod.Get">
+            <summary>
+            Requests a file from the remote device.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.ObexMethod.Connect">
+            <summary>
+            Negotiate an Object Exchange connection with a remote device.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.ObexMethod.Disconnect">
+            <summary>
+            Disconnect an existing Object Exchange session.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.ObexMethod.PutFinal">
+            <summary>
+            Sends the last packet of an object to a receiving device.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.ObexMethod.SetPath">
+            <summary>
+            Change remote path on an Object Exchange server.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.ObexListenerRequest">
+            <summary>
+            Describes an incoming OBEX request to an <see cref="T:InTheHand.Net.ObexListener"/> object.
+            </summary>
+        </member>
+        <member name="M:InTheHand.Net.ObexListenerRequest.WriteFile(System.String)">
+            <summary>
+            Writes the body of the request to the specified file path.
+            </summary>
+            <param name="fileName">The filename (including the path) to write to.</param>
+        </member>
+        <member name="P:InTheHand.Net.ObexListenerRequest.ContentLength64">
+            <summary>
+            Gets the length of the body data included in the request.
+            <para><b>New in v1.5.51015</b></para>
+            </summary>
+            <value>A long value that contains the value from the request's Length header.
+            This value is -1 if the content length is not known.</value>
+            <remarks>The Length header expresses the length, in bytes, of the body data that accompanies the request.</remarks>
+        </member>
+        <member name="P:InTheHand.Net.ObexListenerRequest.ContentType">
+            <summary>
+            Gets the MIME type of the body data included in the request.
+            </summary>
+            <value>A <see cref="T:System.String"/> that contains the text of the request's Type header.</value>
+        </member>
+        <member name="P:InTheHand.Net.ObexListenerRequest.Headers">
+            <summary>
+            Gets the collection of header name/value pairs sent in the request.
+            </summary>
+            <value>A <see cref="T:System.Net.WebHeaderCollection"/> that contains the OBEX headers included in the request.</value>
+            <remarks>For a complete list of request headers, see the <see cref="T:InTheHand.Net.ObexHeader"/> enumeration.</remarks>
+        </member>
+        <member name="P:InTheHand.Net.ObexListenerRequest.LocalEndPoint">
+            <summary>
+            Get the device address and service to which the request is directed.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.ObexListenerRequest.ObexMethod">
+            <summary>
+            Gets the method specified by the client.
+            </summary>
+            <remarks>Only PUT is supported in this version.</remarks>
+        </member>
+        <member name="P:InTheHand.Net.ObexListenerRequest.InputStream">
+            <summary>
+            Gets a stream that contains the body data sent by the client.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.ObexListenerRequest.ProtocolVersion">
+            <summary>
+            Gets the OBEX version used by the requesting client
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.ObexListenerRequest.RawUrl">
+            <summary>
+            Gets the URL information (without the host and port) requested by the client.
+            </summary>
+            <value>A <see cref="T:System.String"/> that contains the raw URL for this request.</value>
+        </member>
+        <member name="P:InTheHand.Net.ObexListenerRequest.RemoteEndPoint">
+            <summary>
+            Gets the device address and service from which the request originated.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.ObexListenerRequest.UserHostAddress">
+            <summary>
+            Gets the server address to which the request is directed.
+            <para><b>New in v1.5.51015</b></para>
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.ObexListenerRequest.Url">
+            <summary>
+            Gets the <see cref="T:System.Uri"/> object requested by the client.
+            <para><b>New in v1.5.51015</b></para>
+            </summary>
+            <value>A <see cref="T:System.Uri"/> object that identifies the resource requested by the client.</value>
+        </member>
+    </members>
+</doc>

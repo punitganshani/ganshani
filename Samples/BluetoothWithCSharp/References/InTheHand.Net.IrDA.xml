@@ -1,0 +1,493 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>InTheHand.Net.IrDA</name>
+    </assembly>
+    <members>
+        <member name="T:InTheHand.Net.Sockets.IrDACharacterSet">
+            <summary>
+            Describes the character sets supported by the device.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.Sockets.IrDAClient">
+            <summary>
+            Provides connection services for an infrared connection.
+            </summary>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.IrDAClient.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:InTheHand.Net.Sockets.IrDAClient"/> class.
+            </summary>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.IrDAClient.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:InTheHand.Net.Sockets.IrDAClient"/> class for a specified service.
+            </summary>
+            <param name="service"></param>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.IrDAClient.#ctor(InTheHand.Net.IrDAEndPoint)">
+            <summary>
+            Initializes a new instance of the <see cref="T:InTheHand.Net.Sockets.IrDAClient"/> class for connecting to a specified endpoint.
+            </summary>
+            <param name="remoteEP">An <see cref="T:InTheHand.Net.IrDAEndPoint"/>.</param>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.IrDAClient.DiscoverDevices">
+            <summary>
+            Obtains information about available devices.
+            </summary>
+            <returns>Returns a maximum of 8 devices, for more flexibility use the other overloads.</returns>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.IrDAClient.DiscoverDevices(System.Int32)">
+            <summary>
+            Obtains information about a specified number of devices.
+            </summary>
+            <param name="maxDevices">The maximum number of devices to get information about.</param>
+            <returns></returns>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.IrDAClient.DiscoverDevices(System.Int32,System.Net.Sockets.Socket)">
+            <summary>
+            Obtains information about available devices using a socket.
+            </summary>
+            <param name="maxDevices">The maximum number of devices to get information about.</param>
+            <param name="irdaSocket"></param>
+            <returns></returns>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.IrDAClient.GetRemoteMachineName(System.Net.Sockets.Socket)">
+            <summary>
+            Gets the name of a device using a specified socket.
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.IrDAClient.Connect(InTheHand.Net.IrDAEndPoint)">
+            <summary>
+            Connects a client to a specified endpoint.
+            </summary>
+            <param name="ep"></param>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.IrDAClient.Connect(System.String)">
+            <summary>
+            Connects a client to a specified service.
+            </summary>
+            <param name="service"></param>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.IrDAClient.Close">
+            <summary>
+            Closes the socket of the connection.
+            </summary>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.IrDAClient.GetStream">
+            <summary>
+            Gets the underlying stream of data.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.IrDAClient.Available">
+            <summary>
+            The number of bytes of data received from the network and available to be read.
+            <para><b>New in v1.5</b></para>
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.IrDAClient.Client">
+            <summary>
+            Gets or sets the underlying <see cref="T:System.Net.Sockets.Socket"/>.
+            <para><b>New in v1.5</b></para>
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.IrDAClient.Connected">
+            <summary>
+            Gets a value indicating whether the underlying <see cref="T:System.Net.Sockets.Socket"/> for an <see cref="T:InTheHand.Net.Sockets.IrDAClient"/> is connected to a remote host.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.IrDAClient.RemoteMachineName">
+            <summary>
+            Gets the name of the device participating in the communication.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.Sockets.IrDADeviceInfo">
+            <summary>
+            Provides information about remote devices connected by infrared communications.
+            </summary>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.IrDADeviceInfo.Equals(System.Object)">
+            <summary>
+            Compares two <see cref="T:InTheHand.Net.Sockets.IrDADeviceInfo"/> instances for equality.
+            <para><b>New in v1.5</b></para>
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>	
+        </member>
+        <member name="M:InTheHand.Net.Sockets.IrDADeviceInfo.GetHashCode">
+            <summary>
+            Returns the hash code for this instance.
+            <para><b>New in v1.5</b></para>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.IrDADeviceInfo.DeviceAddress">
+            <summary>
+            Returns the address of the remote device.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.IrDADeviceInfo.DeviceId">
+            <summary>
+            Provided solely for compatibility with System.Net.IrDA - consider using <see cref="P:InTheHand.Net.Sockets.IrDADeviceInfo.DeviceAddress"/> instead.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.IrDADeviceInfo.DeviceName">
+            <summary>
+            Gets the name of the device.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.IrDADeviceInfo.CharacterSet">
+            <summary>
+            Gets the character set used by the server, such as ASCII.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.IrDADeviceInfo.Hints">
+            <summary>
+            Gets the type of the device, such as a computer.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.Sockets.IrDAHints">
+            <summary>
+            Describes an enumeration of possible device types, such as Fax.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.IrDAHints.None">
+            <summary>
+            Unspecified device type.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.IrDAHints.PnP">
+            <summary>
+            A Plug and Play interface.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.IrDAHints.PdaAndPalmtop">
+            <summary>
+            A Pocket PC or similar.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.IrDAHints.Computer">
+            <summary>
+            A personal computer.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.IrDAHints.Printer">
+            <summary>
+            A printer.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.IrDAHints.Modem">
+            <summary>
+            A modem.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.IrDAHints.Fax">
+            <summary>
+            A fax.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.IrDAHints.LanAccess">
+            <summary>
+            A local area network access.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.IrDAHints.Telephony">
+            <summary>
+            A telephonic device.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.IrDAHints.FileServer">
+            <summary>
+            A personal computer file server.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.Sockets.IrDAListener">
+            <summary>
+            Places a socket in a listening state to monitor infrared connections from a specified service or network address.
+            </summary>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.IrDAListener.#ctor(InTheHand.Net.IrDAEndPoint)">
+            <summary>
+            Initializes a new instance of the IrDAListener class.
+            </summary>
+            <param name="ep">The network address to monitor for making a connection.</param>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.IrDAListener.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the IrDAListener class.
+            </summary>
+            <param name="service">The name of the service to listen for.</param>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.IrDAListener.Start">
+            <summary>
+            Starts the socket to listen for incoming connections.
+            </summary>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.IrDAListener.Stop">
+            <summary>
+            Stops the socket from monitoring connections.
+            </summary>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.IrDAListener.AcceptSocket">
+            <summary>
+            Creates a new socket for a connection.
+            </summary>
+            <returns>A socket.</returns>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.IrDAListener.AcceptIrDAClient">
+            <summary>
+            Creates a client object for a connection when the specified service or endpoint is detected by the listener component.
+            </summary>
+            <returns>An <see cref="T:InTheHand.Net.Sockets.IrDAClient"/> object.</returns>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.IrDAListener.Pending">
+            <summary>
+            Determines if a connection is pending.
+            </summary>
+            <returns>true if there is a connection pending; otherwise, false.</returns>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.IrDAListener.Server">
+            <summary>
+            Gets the underlying network <see cref="T:System.Net.Sockets.Socket"/>.
+            <para><b>New in v1.5</b></para>
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.IrDAListener.Active">
+            <summary>
+            Gets a value that indicates whether the <see cref="T:InTheHand.Net.Sockets.IrDAListener"/> is actively listening for client connections.
+            <para><b>New in v1.5</b></para>
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.IrDAListener.LocalEndpoint">
+            <summary>
+            Gets an <see cref="T:InTheHand.Net.IrDAEndPoint"/> representing the local device.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.Sockets.IrDASocketOptionName">
+            <summary>
+            Defines <see cref="T:System.Net.Sockets.Socket"/> configuration option names for the <see cref="T:System.Net.Sockets.Socket"/> class when used with IrDA.
+            <para><b>New in v1.5.51015</b></para>
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.IrDASocketOptionName.EnumDevice">
+            <summary>
+            Returns a list of IrDA device IDs for IR capable devices within range.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.IrDASocketOptionName.IasSet">
+            <summary>
+            Enables an application to set a single class in the local IAS.
+            The application specifies the class to set, the attribute, and attribute type.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.IrDASocketOptionName.IasQuery">
+            <summary>
+            Queries IAS on a given service and class name for its attributes.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.IrDASocketOptionName.SendPduLength">
+            <summary>
+            Retrieves the maximum PDU length required to use <see cref="F:InTheHand.Net.Sockets.IrDASocketOptionName.NineWireMode"/>.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.IrDASocketOptionName.ExclusiveMode">
+            <summary>
+            Sets socket to bypass TinyTP layer to directly communicate with IrLMP.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.IrDASocketOptionName.IrLptMode">
+            <summary>
+            Disables TinyTP mode and sends data directly over IrLMP frames.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.IrDASocketOptionName.NineWireMode">
+            <summary>
+            Puts the IrDA socket into IrCOMM mode.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.IrDASocketOptionName.SharpMode">
+            <summary>
+            Enables the Sharp mode.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.Sockets.IrDASocketOptionLevel">
+            <summary>
+            Defines IrDA specific socket option levels for the <see cref="M:System.Net.Sockets.Socket.SetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName,System.Int32)"/> and <see cref="M:System.Net.Sockets.Socket.GetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName)"/> methods.
+            <para><b>New in v1.5.51015</b></para>
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.IrDASocketOptionLevel.IrLmp">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.IrDAAddress">
+            <summary>
+            Represents an IrDA device address.
+            <para><b>New in v1.5</b></para>
+            </summary>
+        </member>
+        <member name="M:InTheHand.Net.IrDAAddress.#ctor(System.Byte[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:InTheHand.Net.IrDAAddress"/> class with the specified address.
+            </summary>
+            <param name="address">Address as 4 byte array.</param>
+            <exception cref="T:System.ArgumentException">address passed was not a 4 byte array.</exception>
+        </member>
+        <member name="M:InTheHand.Net.IrDAAddress.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:InTheHand.Net.IrDAAddress"/> class with the specified address.
+            </summary>
+            <param name="address"><see cref="T:System.Int32"/> representation of the address.</param>
+        </member>
+        <member name="M:InTheHand.Net.IrDAAddress.ToInt32">
+            <summary>
+            Returns the IrDA address as an integer.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:InTheHand.Net.IrDAAddress.ToByteArray">
+            <summary>
+            Returns the internal byte array.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:InTheHand.Net.IrDAAddress.Parse(System.String)">
+            <summary>
+            Converts the string representation of an IrDA address to a new <see cref="T:InTheHand.Net.IrDAAddress"/> instance.
+            </summary>
+            <param name="address">A string containing an address to convert.</param>
+            <returns>New <see cref="T:InTheHand.Net.IrDAAddress"/> instance.</returns>
+            <remarks>Address must be specified in hex format optionally separated by the colon or period character e.g. 00000000, 00:00:00:00 or 00.00.00.00.</remarks>
+        </member>
+        <member name="M:InTheHand.Net.IrDAAddress.ToString">
+            <summary>
+            Converts the address to its equivalent string representation.
+            </summary>
+            <returns>The string representation of this instance.</returns>
+        </member>
+        <member name="M:InTheHand.Net.IrDAAddress.ToString(System.String)">
+            <summary>
+            Returns a <see cref="T:System.String"/> representation of the value of this <see cref="T:InTheHand.Net.IrDAAddress"/> instance, according to the provided format specifier.
+            <para><b>New in v1.5</b></para>
+            </summary>
+            <param name="format">A single format specifier that indicates how to format the value of this Guid. The format parameter can be "N", "C" or "P". If format is null or the empty string (""), "N" is used.</param>
+            <returns>A <see cref="T:System.String"/> representation of the value of this <see cref="!:BluetoothAddress"/>.</returns>
+            <remarks><list type="table">
+            <listheader><term>Specifier</term><term>Format of Return Value </term></listheader>
+            <item><term>N</term><term>8 digits: <para>XXXXXXXX</para></term></item>
+            <item><term>C</term><term>8 digits separated by colons: <para>XX:XX:XX:XX</para></term></item>
+            <item><term>P</term><term>8 digits separated by periods: <para>XX.XX.XX.XX</para></term></item>
+            </list></remarks>
+        </member>
+        <member name="M:InTheHand.Net.IrDAAddress.Equals(System.Object)">
+            <summary>
+            Compares two <see cref="T:InTheHand.Net.IrDAAddress"/> instances for equality.
+            <para><b>New in v1.5</b></para>
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:InTheHand.Net.IrDAAddress.GetHashCode">
+            <summary>
+            Returns the hash code for this instance.
+            <para><b>New in v1.5</b></para>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:InTheHand.Net.IrDAAddress.op_Equality(InTheHand.Net.IrDAAddress,InTheHand.Net.IrDAAddress)">
+            <summary>
+            Returns an indication whether the values of two specified <see cref="T:InTheHand.Net.IrDAAddress"/> objects are equal.
+            <para><b>New in v1.5</b></para>
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <returns></returns>
+        </member>
+        <member name="M:InTheHand.Net.IrDAAddress.op_Inequality(InTheHand.Net.IrDAAddress,InTheHand.Net.IrDAAddress)">
+            <summary>
+            Returns an indication whether the values of two specified <see cref="!:BluetoothAddress"/> objects are not equal.
+            <para><b>New in v1.5</b></para>
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <returns></returns>
+        </member>
+        <member name="F:InTheHand.Net.IrDAAddress.None">
+            <summary>
+            Provides a null IrDA address.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.IrDAEndPoint">
+            <summary>
+            Represents an end point for an infrared connection.
+            </summary>
+        </member>
+        <member name="M:InTheHand.Net.IrDAEndPoint.#ctor(System.Byte[],System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:InTheHand.Net.IrDAEndPoint"/> class.
+            </summary>
+            <param name="irdaDeviceID">The device identifier.</param>
+            <param name="serviceName">The name of the service to connect to.</param>
+        </member>
+        <member name="M:InTheHand.Net.IrDAEndPoint.#ctor(InTheHand.Net.IrDAAddress,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:InTheHand.Net.IrDAEndPoint"/> class.
+            </summary>
+            <param name="irdaDeviceAddress">The device address.</param>
+            <param name="serviceName">The name of the service to connect to.</param>
+        </member>
+        <member name="M:InTheHand.Net.IrDAEndPoint.Serialize">
+            <summary>
+            Serializes endpoint information into a <see cref="T:System.Net.SocketAddress"/>.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:InTheHand.Net.IrDAEndPoint.Create(System.Net.SocketAddress)">
+            <summary>
+            Creates an <see cref="T:InTheHand.Net.IrDAEndPoint"/> from a socket address
+            </summary>
+            <param name="socketaddr">A <see cref="T:System.Net.SocketAddress"/>.</param>
+            <returns></returns>
+        </member>
+        <member name="M:InTheHand.Net.IrDAEndPoint.Equals(System.Object)">
+            <summary>
+            Compares two <see cref="T:InTheHand.Net.IrDAEndPoint"/> instances for equality.
+            <para><b>New in v1.5</b></para>
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:InTheHand.Net.IrDAEndPoint.GetHashCode">
+            <summary>
+            Returns the hash code for this instance.
+            <para><b>New in v1.5</b></para>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:InTheHand.Net.IrDAEndPoint.Address">
+            <summary>
+            Gets or sets an address for the device.
+            <para><b>New in v1.5</b></para>
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.IrDAEndPoint.DeviceID">
+            <summary>
+            Gets or sets an identifier for the device.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.IrDAEndPoint.ServiceName">
+            <summary>
+            Gets or sets the name of the service.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.IrDAEndPoint.AddressFamily">
+            <summary>
+            Gets the address family to which the endpoint belongs.
+            </summary>
+        </member>
+    </members>
+</doc>

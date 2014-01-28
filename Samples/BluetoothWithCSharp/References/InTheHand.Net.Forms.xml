@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>InTheHand.Net.Forms</name>
+    </assembly>
+    <members>
+        <member name="M:InTheHand.ComponentModel.BackgroundWorker.#ctor">
+            <summary>
+            Initializes a new instance of the BackgroundWorker class.
+            </summary>
+        </member>
+        <member name="M:InTheHand.ComponentModel.BackgroundWorker.#ctor(System.Windows.Forms.Control)">
+            <summary>
+            Initializes a new instance of the BackgroundWorker class.
+            Call from the desktop code as the other ctor is not good enough
+            Call it passing in a created control e.g. the Form
+            </summary>
+        </member>
+        <member name="M:InTheHand.ComponentModel.BackgroundWorker.ReportProgress(System.Int32)">
+            <summary>
+            Raises the BackgroundWorker.ProgressChanged event.
+            </summary>
+            <param name="aProgressPercent">The percentage, from 0 to 100, of the background operation that is complete. </param>
+        </member>
+        <member name="M:InTheHand.ComponentModel.BackgroundWorker.ReportProgress(System.Int32,System.Object)">
+            <summary>
+            Raises the BackgroundWorker.ProgressChanged event.
+            </summary>
+            <param name="aProgressPercent">The percentage, from 0 to 100, of the background operation that is complete. </param>
+            <param name="aUserState">The state object passed to BackgroundWorker.RunWorkerAsync(System.Object).</param>
+        </member>
+        <member name="M:InTheHand.ComponentModel.BackgroundWorker.RunWorkerAsync">
+            <summary>
+            Starts execution of a background operation.
+            </summary>
+        </member>
+        <member name="M:InTheHand.ComponentModel.BackgroundWorker.RunWorkerAsync(System.Object)">
+            <summary>
+            Starts execution of a background operation.
+            </summary>
+            <param name="aArgument"> A parameter for use by the background operation to be executed in the BackgroundWorker.DoWork event handler.</param>
+        </member>
+        <member name="M:InTheHand.ComponentModel.BackgroundWorker.CancelAsync">
+            <summary>
+            Requests cancellation of a pending background operation.
+            </summary>
+        </member>
+        <member name="E:InTheHand.ComponentModel.BackgroundWorker.DoWork">
+            <summary>
+            Occurs when <see cref="M:InTheHand.ComponentModel.BackgroundWorker.RunWorkerAsync"/> is called.
+            </summary>
+        </member>
+        <member name="E:InTheHand.ComponentModel.BackgroundWorker.ProgressChanged">
+            <summary>
+            Occurs when <see cref="M:InTheHand.ComponentModel.BackgroundWorker.ReportProgress(System.Int32)"/> is called.
+            </summary>
+        </member>
+        <member name="E:InTheHand.ComponentModel.BackgroundWorker.RunWorkerCompleted">
+            <summary>
+            Occurs when the background operation has completed, has been cancelled, or has raised an exception.
+            </summary>
+        </member>
+        <member name="P:InTheHand.ComponentModel.BackgroundWorker.CancellationPending">
+            <summary>
+            Gets a value indicating whether the application has requested cancellation of a background operation.
+            </summary>
+        </member>
+        <member name="P:InTheHand.ComponentModel.BackgroundWorker.WorkerReportsProgress">
+            <summary>
+            Gets or sets a value indicating whether the BackgroundWorker object can report progress updates.
+            </summary>
+        </member>
+        <member name="P:InTheHand.ComponentModel.BackgroundWorker.WorkerSupportsCancellation">
+            <summary>
+            Gets or sets a value indicating whether the BackgroundWorker object supports asynchronous cancellation.
+            </summary>
+        </member>
+        <member name="P:InTheHand.ComponentModel.BackgroundWorker.IsBusy">
+            <summary>
+             Gets a value indicating whether the System.ComponentModel.BackgroundWorker is running an asynchronous operation.
+            Returns:
+            true, if the System.ComponentModel.BackgroundWorker is running an
+            asynchronous operation; otherwise, false.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.Forms.SelectBluetoothDeviceDialog">
+            <summary>
+            Provides a form to select an available Bluetooth device.
+            </summary>
+        </member>
+        <member name="M:InTheHand.Net.Forms.SelectBluetoothDeviceDialog.ShowDialog">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:InTheHand.Net.Forms.SelectBluetoothDeviceDialog.SelectedDevice">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Forms.SelectBluetoothDeviceDialog.ShowAuthenticated">
+            <summary>
+            If TRUE, authenticated devices are shown in the picker.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Forms.SelectBluetoothDeviceDialog.ShowRemembered">
+            <summary>
+            If TRUE, remembered devices are shown in the picker.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Forms.SelectBluetoothDeviceDialog.ShowUnknown">
+            <summary>
+            If TRUE, unknown devices are shown in the picker.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.Forms.SelectBluetoothDeviceForm">
+            <summary>
+            Managed code dialog for Windows CE systems.
+            </summary>
+        </member>
+        <member name="M:InTheHand.Net.Forms.SelectBluetoothDeviceForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:InTheHand.Net.Forms.SelectBluetoothDeviceForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>

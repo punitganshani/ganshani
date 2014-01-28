@@ -1,0 +1,2462 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>InTheHand.Net.Bluetooth</name>
+    </assembly>
+    <members>
+        <member name="T:InTheHand.Net.Bluetooth.BTHNS_BLOB">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:InTheHand.Net.Bluetooth.BTHNS_BLOB.ToByteArray">
+            <summary>
+            Internal bytes
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:InTheHand.Net.Bluetooth.BTHNS_BLOB.Length">
+            <summary>
+            Size of the structure.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.Sockets.BluetoothSocket">
+            <summary>
+            Implements the <see cref="T:System.Net.Sockets.Socket"/> for the Bluetooth address family.
+            </summary>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.BluetoothSocket.#ctor">
+            <summary>
+            Creates a new <see cref="T:System.Net.Sockets.Socket"/> for the Bluetooth address family.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.Sockets.BluetoothDeviceInfo">
+            <summary>
+            Provides information about an available device obtained by the client during device discovery.
+            </summary>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.BluetoothDeviceInfo.ShowDialog">
+            <summary>
+            Displays information about the device.
+            <para><b>New in v1.5</b></para>
+            </summary>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.BluetoothDeviceInfo.Equals(System.Object)">
+            <summary>
+            Compares two <see cref="T:InTheHand.Net.Sockets.BluetoothDeviceInfo"/> instances for equality.
+            <para><b>New in v1.5</b></para>
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>	
+        </member>
+        <member name="M:InTheHand.Net.Sockets.BluetoothDeviceInfo.GetHashCode">
+            <summary>
+            Returns the hash code for this instance. 
+            <para><b>New in v1.5</b></para>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.BluetoothDeviceInfo.DeviceAddress">
+            <summary>
+            Gets the device identifier.
+            <para><b>New in v1.5</b></para>
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.BluetoothDeviceInfo.DeviceID">
+            <summary>
+            Gets the device identifier.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.BluetoothDeviceInfo.DeviceName">
+            <summary>
+            Gets a name of a device.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.BluetoothDeviceInfo.ClassOfDevice">
+            <summary>
+            Returns the Class of Device of the remote device.
+            <para><b>New in v1.4</b></para>
+            </summary>
+            <remarks>Some earlier CE 4.2 based devices don't support this API call and will return Zero.</remarks>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.BluetoothDeviceInfo.Services">
+            <summary>
+            Returns a list of exposed services. (Windows XP only)
+            <para><b>New in v1.4</b></para>
+            </summary>
+            <remarks>Under Windows CE this will return an empty collection.</remarks>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.BluetoothDeviceInfo.Connected">
+            <summary>
+            Device connected.
+            </summary>
+            <remarks>Not supported under Windows CE and will always return false.</remarks>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.BluetoothDeviceInfo.Remembered">
+            <summary>
+            Device remembered.
+            </summary>
+            <remarks>Not supported under Windows CE and will always return false.</remarks>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.BluetoothDeviceInfo.Authenticated">
+            <summary>
+            Device Authenticated.
+            </summary>
+            <remarks>Now supported on both CE and XP in v1.5.</remarks>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.BluetoothDeviceInfo.LastSeen">
+            <summary>
+            Date and Time this device was last seen by the system.
+            </summary>
+            <remarks>Not supported under Windows CE and will return DateTime.MinValue.</remarks>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.BluetoothDeviceInfo.LastUsed">
+            <summary>
+            Date and Time this device was last used by the system.
+            </summary>
+            <remarks>Not supported under Windows CE and will return DateTime.MinValue.</remarks>
+        </member>
+        <member name="T:InTheHand.Windows.Forms.SelectBluetoothDeviceDialog">
+            <summary>
+            Provides a form to select an available Bluetooth device.
+            <para><b>New in v1.5</b></para>
+            </summary>
+        </member>
+        <member name="M:InTheHand.Windows.Forms.SelectBluetoothDeviceDialog.ShowDialog">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:InTheHand.Windows.Forms.SelectBluetoothDeviceDialog.SelectedDevice">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:InTheHand.Windows.Forms.SelectBluetoothDeviceDialog.ShowAuthenticated">
+            <summary>
+            If TRUE, authenticated devices are shown in the picker.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Windows.Forms.SelectBluetoothDeviceDialog.ShowRemembered">
+            <summary>
+            If TRUE, remembered devices are shown in the picker.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Windows.Forms.SelectBluetoothDeviceDialog.ShowUnknown">
+            <summary>
+            If TRUE, unknown devices are shown in the picker.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.Bluetooth.BLUETOOTH_RADIO_INFO">
+            <summary>
+            The BLUETOOTH_RADIO_INFO structure contains information about a Bluetooth radio (Windows XP).
+            </summary>
+        </member>
+        <member name="M:OpenNETCF.ComponentModel.BackgroundWorker.#ctor">
+            <summary>
+            Initializes a new instance of the BackgroundWorker class.
+            </summary>
+        </member>
+        <member name="M:OpenNETCF.ComponentModel.BackgroundWorker.#ctor(System.Windows.Forms.Control)">
+            <summary>
+            Initializes a new instance of the BackgroundWorker class.
+            Call from the desktop code as the other ctor is not good enough
+            Call it passing in a created control e.g. the Form
+            </summary>
+        </member>
+        <member name="M:OpenNETCF.ComponentModel.BackgroundWorker.ReportProgress(System.Int32)">
+            <summary>
+            Raises the BackgroundWorker.ProgressChanged event.
+            </summary>
+            <param name="aProgressPercent">The percentage, from 0 to 100, of the background operation that is complete. </param>
+        </member>
+        <member name="M:OpenNETCF.ComponentModel.BackgroundWorker.ReportProgress(System.Int32,System.Object)">
+            <summary>
+            Raises the BackgroundWorker.ProgressChanged event.
+            </summary>
+            <param name="aProgressPercent">The percentage, from 0 to 100, of the background operation that is complete. </param>
+            <param name="aUserState">The state object passed to BackgroundWorker.RunWorkerAsync(System.Object).</param>
+        </member>
+        <member name="M:OpenNETCF.ComponentModel.BackgroundWorker.RunWorkerAsync">
+            <summary>
+            Starts execution of a background operation.
+            </summary>
+        </member>
+        <member name="M:OpenNETCF.ComponentModel.BackgroundWorker.RunWorkerAsync(System.Object)">
+            <summary>
+            Starts execution of a background operation.
+            </summary>
+            <param name="aArgument"> A parameter for use by the background operation to be executed in the BackgroundWorker.DoWork event handler.</param>
+        </member>
+        <member name="M:OpenNETCF.ComponentModel.BackgroundWorker.CancelAsync">
+            <summary>
+            Requests cancellation of a pending background operation.
+            </summary>
+        </member>
+        <member name="E:OpenNETCF.ComponentModel.BackgroundWorker.DoWork">
+            <summary>
+            Occurs when <see cref="M:OpenNETCF.ComponentModel.BackgroundWorker.RunWorkerAsync"/> is called.
+            </summary>
+        </member>
+        <member name="E:OpenNETCF.ComponentModel.BackgroundWorker.ProgressChanged">
+            <summary>
+            Occurs when <see cref="M:OpenNETCF.ComponentModel.BackgroundWorker.ReportProgress(System.Int32)"/> is called.
+            </summary>
+        </member>
+        <member name="E:OpenNETCF.ComponentModel.BackgroundWorker.RunWorkerCompleted">
+            <summary>
+            Occurs when the background operation has completed, has been cancelled, or has raised an exception.
+            </summary>
+        </member>
+        <member name="P:OpenNETCF.ComponentModel.BackgroundWorker.CancellationPending">
+            <summary>
+            Gets a value indicating whether the application has requested cancellation of a background operation.
+            </summary>
+        </member>
+        <member name="P:OpenNETCF.ComponentModel.BackgroundWorker.WorkerReportsProgress">
+            <summary>
+            Gets or sets a value indicating whether the BackgroundWorker object can report progress updates.
+            </summary>
+        </member>
+        <member name="P:OpenNETCF.ComponentModel.BackgroundWorker.WorkerSupportsCancellation">
+            <summary>
+            Gets or sets a value indicating whether the BackgroundWorker object supports asynchronous cancellation.
+            </summary>
+        </member>
+        <member name="P:OpenNETCF.ComponentModel.BackgroundWorker.IsBusy">
+            <summary>
+             Gets a value indicating whether the System.ComponentModel.BackgroundWorker is running an asynchronous operation.
+            Returns:
+            true, if the System.ComponentModel.BackgroundWorker is running an
+            asynchronous operation; otherwise, false.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.Sockets.BluetoothClient">
+            <summary>
+             Provides client connections for Bluetooth network services.
+            </summary>
+            <remarks>This class currently only supports devices which use the Microsoft Bluetooth stack such as the Orange SPV E200, devices which use the WidComm stack will not work.</remarks>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.BluetoothClient.#ctor">
+            <summary>
+            Creates a new instance of BluetoothClient.
+            </summary>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.BluetoothClient.DiscoverDevices">
+            <summary>
+            Discovers accessible Bluetooth devices and returns their names and addresses.
+            </summary>
+            <returns>An array of BluetoothDeviceInfo objects describing the devices discovered.</returns>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.BluetoothClient.DiscoverDevices(System.Int32)">
+            <summary>
+            Discovers accessible Bluetooth devices and returns their names and addresses.
+            </summary>
+            <param name="maxDevices">The maximum number of devices to get information about.</param>
+            <returns>An array of BluetoothDeviceInfo objects describing the devices discovered.</returns>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.BluetoothClient.DiscoverDevices(System.Int32,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Discovers accessible Bluetooth devices and returns their names and addresses.
+            </summary>
+            <param name="maxDevices">The maximum number of devices to get information about.</param>
+            <param name="authenticated">True to return previously authenticated/paired devices.</param>
+            <param name="remembered">True to return remembered devices.</param>
+            <param name="unknown">True to return previously unknown devices.</param>
+            <returns>An array of BluetoothDeviceInfo objects describing the devices discovered.</returns>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.BluetoothClient.Connect(InTheHand.Net.BluetoothEndPoint)">
+            <summary>
+            Connects a client to a specified endpoint.
+            </summary>
+            <param name="ep">A <see cref="T:InTheHand.Net.BluetoothEndPoint"/> that represents the remote device.</param>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.BluetoothClient.Close">
+            <summary>
+            Closes the socket of the connection.
+            </summary>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.BluetoothClient.GetStream">
+            <summary>
+            Gets the underlying stream of data.
+            </summary>
+            <returns>The underlying <see cref="T:System.Net.Sockets.NetworkStream"/>.</returns>
+            <remarks><see cref="M:InTheHand.Net.Sockets.BluetoothClient.GetStream"/> returns a <see cref="T:System.Net.Sockets.NetworkStream"/> that you can use to send and receive data.
+            The <see cref="T:System.Net.Sockets.NetworkStream"/> class inherits from the <see cref="T:System.IO.Stream"/> class, which provides a rich collection of methods and properties used to facilitate network communications.
+            <para>You must call the <see cref="M:InTheHand.Net.Sockets.BluetoothClient.Connect(InTheHand.Net.BluetoothEndPoint)"/> method first, or the <see cref="M:InTheHand.Net.Sockets.BluetoothClient.GetStream"/> method will throw an <see cref="T:System.InvalidOperationException"/>.
+            After you have obtained the <see cref="T:System.Net.Sockets.NetworkStream"/>, call the <see cref="M:System.Net.Sockets.NetworkStream.Write(System.Byte[],System.Int32,System.Int32)"/> method to send data to the remote host.
+            Call the <see cref="M:System.Net.Sockets.NetworkStream.Read(System.Byte[],System.Int32,System.Int32)"/> method to receive data arriving from the remote host.
+            Both of these methods block until the specified operation is performed.
+            You can avoid blocking on a read operation by checking the <see cref="P:System.Net.Sockets.NetworkStream.DataAvailable"/> property.
+            A true value means that data has arrived from the remote host and is available for reading.
+            In this case, <see cref="M:System.Net.Sockets.NetworkStream.Read(System.Byte[],System.Int32,System.Int32)"/> is guaranteed to complete immediately.
+            If the remote host has shutdown its connection, <see cref="M:System.Net.Sockets.NetworkStream.Read(System.Byte[],System.Int32,System.Int32)"/> will immediately return with zero bytes.</para></remarks>
+            <exception cref="T:System.InvalidOperationException">The <see cref="T:InTheHand.Net.Sockets.BluetoothClient"/> is not connected to a remote host.</exception>
+            <exception cref="T:System.ObjectDisposedException">The <see cref="T:InTheHand.Net.Sockets.BluetoothClient"/> has been closed.</exception>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.BluetoothClient.SetPin(InTheHand.Net.BluetoothAddress,System.String)">
+            <summary>
+            Set or change the PIN to be used with a specific remote device.
+            </summary>
+            <param name="device">Address of Bluetooth device.</param>
+            <param name="pin">PIN string consisting of 1-16 ASCII characters.</param>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.BluetoothClient.GetRemoteMachineName(InTheHand.Net.BluetoothAddress)">
+            <summary>
+            Gets the name of the specified remote device.
+            </summary>
+            <param name="a">Address of remote device.</param>
+            <returns>Friendly name of specified device.</returns>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.BluetoothClient.GetRemoteMachineName(System.Net.Sockets.Socket)">
+            <summary>
+            Gets the name of a device by a specified socket.
+            </summary>
+            <param name="s"> A <see cref="T:System.Net.Sockets.Socket"/>.</param>
+            <returns>Returns a string value of the computer or device name.</returns>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.BluetoothClient.Dispose(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.BluetoothClient.Dispose">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.BluetoothClient.Finalize">
+            <summary>
+            Frees resources used by the <see cref="T:InTheHand.Net.Sockets.BluetoothClient"/> class.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.BluetoothClient.QueryLength">
+            <summary>
+            Amount of time allowed to perform the query.
+            </summary>
+            <remarks>This value is measured in units of 1.28 seconds (time to query = length * 1.28 seconds).
+            The default value is 16.</remarks>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.BluetoothClient.Available">
+            <summary>
+            Gets the amount of data that has been received from the network and is available to be read.
+            <para><b>New in v1.4</b></para>
+            </summary>
+            <value>The number of bytes of data received from the network and available to be read.</value>
+            <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket"/> has been closed.</exception>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.BluetoothClient.Client">
+            <summary>
+            Gets or sets the underlying <see cref="T:System.Net.Sockets.Socket"/>.
+            <para><b>New in v1.4</b></para>
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.BluetoothClient.Connected">
+            <summary>
+            Gets a value indicating whether the underlying <see cref="T:System.Net.Sockets.Socket"/> for a <see cref="T:InTheHand.Net.Sockets.BluetoothClient"/> is connected to a remote host.
+            <para><b>New in v1.4</b></para>
+            </summary>
+            <value>true if the <see cref="P:InTheHand.Net.Sockets.BluetoothClient.Client"/> socket was connected to a remote resource as of the most recent operation; otherwise, false.</value>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.BluetoothClient.Authenticate">
+            <summary>
+            Gets or sets the authentication state of the current connect or behaviour to use when connection is established.
+            <para><b>Revised in v1.5</b></para>
+            </summary>
+            <remarks>
+            For disconnected sockets, specifies that authentication is required in order for a connect or accept operation to complete successfully.
+            Setting this option actively initiates authentication during connection establishment, if the two Bluetooth devices were not previously authenticated.
+            The user interface for passkey exchange, if necessary, is provided by the operating system outside the application context.
+            For outgoing connections that require authentication, the connect operation fails with WSAEACCES if authentication is not successful.
+            In response, the application may prompt the user to authenticate the two Bluetooth devices before connection.
+            For incoming connections, the connection is rejected if authentication cannot be established and returns a WSAEHOSTDOWN error.
+            </remarks>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.BluetoothClient.ClassOfDevice">
+            <summary>
+            Returns the Class of Device for the local device.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.BluetoothClient.Encrypt">
+            <summary>
+            On unconnected sockets, enforces encryption to establish a connection.
+            Encryption is only available for authenticated connections.
+            For incoming connections, a connection for which encryption cannot be established is automatically rejected and returns WSAEHOSTDOWN as the error.
+            For outgoing connections, the connect function fails with WSAEACCES if encryption cannot be established.
+            In response, the application may prompt the user to authenticate the two Bluetooth devices before connection.
+            <para><b>Revised in v1.5</b></para>
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.BluetoothClient.HardwareStatus">
+            <summary>
+            Returns the current status of the Bluetooth radio hardware.
+            </summary>
+            <value>A member of the <see cref="P:InTheHand.Net.Sockets.BluetoothClient.HardwareStatus"/> enumeration.</value>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.BluetoothClient.LinkKey">
+            <summary>
+            Returns link key associated with peer Bluetooth device.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.BluetoothClient.LinkPolicy">
+            <summary>
+            Returns the Link Policy of the current connection.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.BluetoothClient.LocalVersion">
+            <summary>
+            Retrieves the version of the local Bluetooth equipment.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.BluetoothClient.Pin">
+            <summary>
+            Sets the PIN associated with the currently connected device.
+            </summary>
+            <value>PIN which must be composed of 1 to 16 ASCII characters.
+            Assigning null (Nothing in VB) or an empty String will revoke the PIN.</value>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.BluetoothClient.RemoteMachineName">
+            <summary>
+            Gets the name of the remote device.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.Bluetooth.BluetoothRadio">
+            <summary>
+            Represents a Bluetooth Radio device.
+            </summary>
+            <remarks>Allows you to query properties of the radio hardware and set the mode.</remarks>
+        </member>
+        <member name="P:InTheHand.Net.Bluetooth.BluetoothRadio.IsSupported">
+            <summary>
+            Gets a value that indicates whether the Bluetooth.NET library can be used with the current device.
+            <para><b>New in v1.5</b></para>
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Bluetooth.BluetoothRadio.PrimaryRadio">
+            <summary>
+            Gets the primary <see cref="T:InTheHand.Net.Bluetooth.BluetoothRadio"/>.
+            </summary>
+            <remarks>For Windows CE based devices this is the only <see cref="T:InTheHand.Net.Bluetooth.BluetoothRadio"/>, for Windows XP this is the first available <see cref="T:InTheHand.Net.Bluetooth.BluetoothRadio"/> device.
+            <para>If the device has a third-party stack this property will return null</para></remarks>
+        </member>
+        <member name="P:InTheHand.Net.Bluetooth.BluetoothRadio.AllRadios">
+            <summary>
+             Gets an array of all Bluetooth radios on the system.  
+            </summary>
+            <remarks>Under Windows CE this will only ever return a single <see cref="T:InTheHand.Net.Bluetooth.BluetoothRadio"/> device.
+            <para>If the device has a third-party stack this property will return an empty collection</para></remarks>
+        </member>
+        <member name="P:InTheHand.Net.Bluetooth.BluetoothRadio.Mode">
+            <summary>
+            Gets or Sets the current mode of operation of the Bluetooth radio.
+            </summary>
+            <remarks>This setting will be persisted when the device is reset.
+            An Icon will be displayed in the tray on the Home screen and the device will emit a blue LED when Bluetooth is enabled.</remarks>
+        </member>
+        <member name="P:InTheHand.Net.Bluetooth.BluetoothRadio.LocalAddress">
+            <summary>
+            Returns the address of the local Bluetooth radio device.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Bluetooth.BluetoothRadio.Name">
+            <summary>
+            Returns the friendly name of the local Bluetooth radio.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Bluetooth.BluetoothRadio.ClassOfDevice">
+            <summary>
+            Returns the Class of Device.
+            <para><b>New in v1.4</b></para>
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Bluetooth.BluetoothRadio.Manufacturer">
+            <summary>
+            Returns the manufacturer of the <see cref="T:InTheHand.Net.Bluetooth.BluetoothRadio"/> device.
+            <para><b>New in v1.4</b></para>
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Bluetooth.BluetoothRadio.SoftwareManufacturer">
+            <summary>
+            Returns the manufacturer of the Bluetooth software stack running locally.
+            Currently only Microsoft is supported.
+            <para><b>New in v1.5.51015</b></para>
+            </summary>
+        </member>
+        <member name="T:OpenNETCF.Win32.SystemTime">
+            <summary>   
+            This structure represents a date and time using individual members for the month, day, year, weekday, hour, minute, second, and millisecond.   
+            </summary>
+            <remarks>Wraps the native <b>SYSTEMTIME</b> structure.</remarks>
+        </member>
+        <member name="F:OpenNETCF.Win32.SystemTime.wYearOffset">
+            <summary>
+            Offset within structure to Year value.
+            </summary>
+        </member>
+        <member name="F:OpenNETCF.Win32.SystemTime.wMonthOffset">
+            <summary>
+            Offset within structure to Month value.
+            </summary>
+        </member>
+        <member name="F:OpenNETCF.Win32.SystemTime.wDayOfWeekOffset">
+            <summary>
+            Offset within structure to DayOfWeek value.
+            </summary>
+        </member>
+        <member name="F:OpenNETCF.Win32.SystemTime.wDayOffset">
+            <summary>
+            Offset within structure to Day value.
+            </summary>
+        </member>
+        <member name="F:OpenNETCF.Win32.SystemTime.wHourOffset">
+            <summary>
+            Offset within structure to Hour value.
+            </summary>
+        </member>
+        <member name="F:OpenNETCF.Win32.SystemTime.wMinuteOffset">
+            <summary>
+            Offset within structure to Minute value.
+            </summary>
+        </member>
+        <member name="F:OpenNETCF.Win32.SystemTime.wSecondOffset">
+            <summary>
+            Offset within structure to Second value.
+            </summary>
+        </member>
+        <member name="F:OpenNETCF.Win32.SystemTime.wMillisecondsOffset">
+            <summary>
+            Offset within structure to Millisecond value.
+            </summary>
+        </member>
+        <member name="F:OpenNETCF.Win32.SystemTime.Empty">
+            <summary>
+            Represents an empty SystemTime structure.
+            </summary>
+        </member>
+        <member name="M:OpenNETCF.Win32.SystemTime.#ctor(System.Byte[])">
+            <summary>
+            Construct a SystemTime from a byte array
+            </summary>   
+            <remarks>This is used when setting a time zone,   
+            which contains two embedded SystemTime structures.</remarks>   
+            <param name="bytes">Byte Array containing SystemTime data.</param> 
+        </member>
+        <member name="M:OpenNETCF.Win32.SystemTime.#ctor(System.Byte[],System.Int32)">
+            <summary>
+            Construct a SystemTime from a portion of a byte array.
+            </summary>   
+            <remarks>This is used when setting a time zone,   
+            which contains two embedded SystemTime structures.</remarks>   
+            <param name="bytes">Byte Array containing SystemTime data.</param>   
+            <param name="offset">Offset (in bytes) to SystemTime data.</param> 
+        </member>
+        <member name="M:OpenNETCF.Win32.SystemTime.#ctor(System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16)">
+            <summary>
+            Initializes a new SystemTime object with the specified parameters.                          /// Initializes a new SYSTEMTIME object with the specified parameters. 
+            <param name="year">Specifies the current year.</param>
+            <param name="month">Specifies the current month; January = 1, February = 2, and so on</param>
+            <param name="day">Specifies the current day of the month.</param>
+            <param name="hour">Specifies the current hour.</param>
+            <param name="minute">Specifies the current minute.</param>
+            <param name="second">Specifies the current second.</param>  
+            </summary>
+        </member>
+        <member name="M:OpenNETCF.Win32.SystemTime.ToByteArray">
+            <summary>
+            Method to extract marshal-compatible 'structure' from the class.   
+            </summary>   
+            <returns>Byte Array containing the SystemTime data.</returns>   
+        </member>
+        <member name="M:OpenNETCF.Win32.SystemTime.#ctor(System.DateTime)">
+            <summary>
+            Create a new SystemTime instance from an existing DateTime instance.
+            </summary>
+            <param name="dt">DateTime to create SystemTime from.</param>
+        </member>
+        <member name="M:OpenNETCF.Win32.SystemTime.#ctor">
+            <summary>
+            Create a new empty SystemTime instance.
+            </summary>
+        </member>
+        <member name="M:OpenNETCF.Win32.SystemTime.op_Implicit(OpenNETCF.Win32.SystemTime)~System.DateTime">
+            <summary>
+            Converts a SystemTime structure to a DateTime object.
+            </summary>
+            <param name="st">A SystemTime structure.</param>
+            <returns>Equivalent date in the form of a <see cref="T:System.DateTime"/></returns>
+        </member>
+        <member name="M:OpenNETCF.Win32.SystemTime.op_Implicit(System.Int64)~OpenNETCF.Win32.SystemTime">
+            <summary>
+            Converts a 64bit FileTime value to a SystemTime structure.
+            </summary>
+            <param name="FileTime">FileTime.</param>
+            <returns>A SystemTime structure.</returns>
+        </member>
+        <member name="M:OpenNETCF.Win32.SystemTime.op_Implicit(OpenNETCF.Win32.SystemTime)~System.Int64">
+            <summary>
+            Converts a SystemTime structure to the equivalent FileTime 64bit integer.
+            </summary>
+            <param name="st"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OpenNETCF.Win32.SystemTime.FromFileTime(System.Int64)">
+            <summary>
+            Returns a SystemTime equivalent to the specified operating system file timestamp.
+            </summary>
+            <param name="fileTime">A Windows file time.</param>
+            <returns>A SystemTime value representing the date and time of fileTime.</returns>
+        </member>
+        <member name="M:OpenNETCF.Win32.SystemTime.ToFileTime">
+            <summary>
+            Converts the value of this instance to the format of a local operating system file time.
+            </summary>
+            <returns>The value of this SystemTime in the format of a local operating system file time.</returns>
+        </member>
+        <member name="M:OpenNETCF.Win32.SystemTime.op_Implicit(OpenNETCF.Win32.SystemTime)~System.Byte[]">
+            <summary>
+            Converts a SystemTime structure to the equivalent binary data.
+            </summary>
+            <param name="st"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OpenNETCF.Win32.SystemTime.FromDateTime(System.DateTime)">
+            <summary>   
+            Creates a new instance of SystemTime from an existing System.DateTime object   
+            </summary>   
+            <param name="dt">DateTime object to copy.</param>   
+            <returns>SystemTime class matching the DateTime object.</returns>   
+        </member>
+        <member name="M:OpenNETCF.Win32.SystemTime.ToDateTime">
+            <summary>   
+            Returns a <see cref="T:System.DateTime"/> object with the same Date and time as this instance.   
+            </summary>   
+            <returns>A <see cref="T:System.DateTime"/> copy of the SystemTime object.</returns>   
+        </member>
+        <member name="P:OpenNETCF.Win32.SystemTime.Year">
+            <summary>   
+            Gets the year component of the date represented by this instance.   
+            </summary> 
+        </member>
+        <member name="P:OpenNETCF.Win32.SystemTime.Month">
+            <summary>   
+            Gets the month component of the date represented by this instance.   
+            </summary> 
+        </member>
+        <member name="P:OpenNETCF.Win32.SystemTime.DayOfWeek">
+            <summary>   
+            The Day of the week. Sunday = 0, Monday = 1, and so on.   
+            </summary>   
+            <remarks>Because the numbering scheme matches the System.DayOfWeek enumeration,   
+            it is possible to cast this field to DayOfWeek.</remarks> 
+        </member>
+        <member name="P:OpenNETCF.Win32.SystemTime.Day">
+            <summary>   
+            Gets the day of the month represented by this instance.   
+            </summary> 
+        </member>
+        <member name="P:OpenNETCF.Win32.SystemTime.Hour">
+            <summary>   
+            Gets the hour component of the date represented by this instance.   
+            </summary> 
+        </member>
+        <member name="P:OpenNETCF.Win32.SystemTime.Minute">
+            <summary>   
+            Gets the minute component of the date represented by this instance.   
+            </summary> 
+        </member>
+        <member name="P:OpenNETCF.Win32.SystemTime.Second">
+            <summary>   
+            Gets the seconds component of the date represented by this instance.   
+            </summary> 
+        </member>
+        <member name="P:OpenNETCF.Win32.SystemTime.Milliseconds">
+            <summary>   
+            Gets the milliseconds component of the date represented by this instance.   
+            </summary> 
+        </member>
+        <member name="T:InTheHand.IO.Ports.PORTEMUPortParams">
+            <summary>
+            Used when creating a virtual serial port.
+            </summary>
+        </member>
+        <member name="M:InTheHand.IO.Ports.PORTEMUPortParams.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:InTheHand.IO.Ports.PORTEMUPortParams.ToByteArray">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:InTheHand.IO.Ports.PORTEMUPortParams.Channel">
+            <summary>
+            Set to either an explicit server channel, or, for a server application that wants the server channel to be autobound, to RFCOMM_CHANNEL_MULTIPLE.
+            </summary>
+        </member>
+        <member name="P:InTheHand.IO.Ports.PORTEMUPortParams.Local">
+            <summary>
+            Set to TRUE for a server port that accepts connections, or to FALSE for a client port that is used to creating outgoing connections.
+            </summary>
+        </member>
+        <member name="P:InTheHand.IO.Ports.PORTEMUPortParams.Address">
+            <summary>
+            The address of a target device on a client port.
+            </summary>
+        </member>
+        <member name="P:InTheHand.IO.Ports.PORTEMUPortParams.Service">
+            <summary>
+            Specifies the UUID for the target RFCOMM service.
+            If channel == 0 for the client port, an SDP query is performed to determine the target channel id before the connection is made.
+            </summary>
+        </member>
+        <member name="P:InTheHand.IO.Ports.PORTEMUPortParams.Flags">
+            <summary>
+            Port Flags.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.Bluetooth.Manufacturer">
+            <summary>
+            Manufacturer codes.
+            </summary>
+            <remarks>Defined in Bluetooth Specifications <a href="https://www.bluetooth.org/foundry/assignnumb/document/company_identifiers">Assigned Numbers</a>.</remarks>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.Manufacturer.InternalUse">
+            <summary>
+            For use in internal and interoperability tests before a Company ID has been assigned.
+            May not be used in products.
+            Only used in Link Manager testing.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.BluetoothAddress">
+            <summary>
+            Represents a Bluetooth device address.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.BluetoothAddress.IacFirst">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.BluetoothAddress.IacLast">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.BluetoothAddress.Liac">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.BluetoothAddress.Giac">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:InTheHand.Net.BluetoothAddress.#ctor(System.Int64)">
+            <summary>
+            Initializes a new instance of the <see cref="T:InTheHand.Net.BluetoothAddress"/> class with the specified address.
+            </summary>
+            <param name="address"><see cref="T:System.Int64"/> representation of the address.</param>
+        </member>
+        <member name="M:InTheHand.Net.BluetoothAddress.#ctor(System.Byte[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:InTheHand.Net.BluetoothAddress"/> class with the specified address.
+            </summary>
+            <param name="address">Address as 6 byte array.</param>
+            <exception cref="T:System.ArgumentException">address passed was not a 6 byte array.</exception>
+        </member>
+        <member name="M:InTheHand.Net.BluetoothAddress.Parse(System.String)">
+            <summary>
+            Converts the string representation of a Bluetooth address to a new <see cref="T:InTheHand.Net.BluetoothAddress"/> instance.
+            <para><b>Revised in v1.5</b></para></summary>
+            <param name="address">A string containing an address to convert.</param>
+            <returns>New <see cref="T:InTheHand.Net.BluetoothAddress"/> instance.</returns>
+            <remarks>Address must be specified in hex format optionally separated by the colon or period character e.g. 000000000000, 00:00:00:00:00:00 or 00.00.00.00.00.00.</remarks>
+        </member>
+        <member name="M:InTheHand.Net.BluetoothAddress.ToByteArray">
+            <summary>
+            Returns the internal byte array.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:InTheHand.Net.BluetoothAddress.ToInt64">
+            <summary>
+            Returns the Bluetooth address as a long integer.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:InTheHand.Net.BluetoothAddress.Equals(System.Object)">
+            <summary>
+            Compares two <see cref="T:InTheHand.Net.BluetoothAddress"/> instances for equality.
+            <para><b>New in v1.5</b></para>
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:InTheHand.Net.BluetoothAddress.GetHashCode">
+            <summary>
+            Returns the hash code for this instance.
+            <para><b>New in v1.5</b></para>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:InTheHand.Net.BluetoothAddress.op_Equality(InTheHand.Net.BluetoothAddress,InTheHand.Net.BluetoothAddress)">
+            <summary>
+            Returns an indication whether the values of two specified <see cref="T:InTheHand.Net.BluetoothAddress"/> objects are equal.<para><b>New in v1.5</b></para>
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <returns></returns>
+        </member>
+        <member name="M:InTheHand.Net.BluetoothAddress.op_Inequality(InTheHand.Net.BluetoothAddress,InTheHand.Net.BluetoothAddress)">
+            <summary>
+            Returns an indication whether the values of two specified <see cref="T:InTheHand.Net.BluetoothAddress"/> objects are not equal.
+            <para><b>New in v1.5</b></para>
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <returns></returns>
+        </member>
+        <member name="M:InTheHand.Net.BluetoothAddress.ToString">
+            <summary>
+            Converts the address to its equivalent string representation.
+            <para><b>Revised in v1.5</b></para></summary>
+            <returns>The string representation of this instance.</returns>
+            <remarks>The default return format is without a separator character - use the other overload for ToString for more formatting options.</remarks>
+        </member>
+        <member name="M:InTheHand.Net.BluetoothAddress.ToString(System.String)">
+            <summary>
+            Returns a <see cref="T:System.String"/> representation of the value of this <see cref="T:InTheHand.Net.BluetoothAddress"/> instance, according to the provided format specifier.
+            <para><b>New in v1.5</b></para>
+            </summary>
+            <param name="format">A single format specifier that indicates how to format the value of this Guid. The format parameter can be "N", "D", "B", or "P". If format is null or the empty string (""), "D" is used.</param>
+            <returns>A <see cref="T:System.String"/> representation of the value of this <see cref="T:InTheHand.Net.BluetoothAddress"/>.</returns>
+            <remarks><list type="table">
+            <listheader><term>Specifier</term><term>Format of Return Value </term></listheader>
+            <item><term>N</term><term>12 digits: <para>XXXXXXXXXXXX</para></term></item>
+            <item><term>C</term><term>12 digits separated by colons: <para>XX:XX:XX:XX:XX:XX</para></term></item>
+            <item><term>P</term><term>12 digits separated by periods: <para>XX.XX.XX.XX.XX.XX</para></term></item>
+            </list></remarks>
+        </member>
+        <member name="F:InTheHand.Net.BluetoothAddress.None">
+            <summary>
+            Provides a null Bluetooth address.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.WSAESETSERVICEOP.RNRSERVICE_REGISTER">
+            <summary>
+            Register the service. For SAP, this means sending out a periodic broadcast.
+            This is an NOP for the DNS namespace.
+            For persistent data stores, this means updating the address information. 
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.WSAESETSERVICEOP.RNRSERVICE_DEREGISTER">
+            <summary>
+             Remove the service from the registry.
+             For SAP, this means stop sending out the periodic broadcast.
+             This is an NOP for the DNS namespace.
+             For persistent data stores this means deleting address information. 
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.WSAESETSERVICEOP.RNRSERVICE_DELETE">
+            <summary>
+            Delete the service from dynamic name and persistent spaces.
+            For services represented by multiple CSADDR_INFO structures (using the SERVICE_MULTIPLE flag), only the specified address will be deleted, and this must match exactly the corresponding CSADDR_INFO structure that was specified when the service was registered 
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.Bluetooth.BTHNS_INQUIRYBLOB">
+            <summary>
+            This structure contains additional parameters for device inquiries.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Bluetooth.BTHNS_INQUIRYBLOB.Lap">
+            <summary>
+            LAP from which the inquiry access code is derived when the inquiry procedure is made.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Bluetooth.BTHNS_INQUIRYBLOB.InquiryLength">
+            <summary>
+            Amount of time allowed to perform the query.
+            This value is measured in units of 1.28 seconds (time to query=length*1.28 seconds).
+            The default value is 16.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Bluetooth.BTHNS_INQUIRYBLOB.Responses">
+            <summary>
+            Maximum number of devices to retrieve information about before stopping the inquiry. The default value is 16.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.Bluetooth.SdpSpecificType">
+            <summary>
+            Identifies specific data types used by SDP.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.Bluetooth.RadioMode">
+            <summary>
+            Determine all the possible modes of operation of the Bluetooth radio.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.RadioMode.PowerOff">
+            <summary>
+            Bluetooth is disabled on the device.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.RadioMode.Connectable">
+            <summary>
+            Bluetooth is connectable but your device cannot be discovered by other devices.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.RadioMode.Discoverable">
+            <summary>
+            Bluetooth is activated and fully discoverable.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.Bluetooth.LinkPolicy">
+            <summary>
+            Flags to describe Link Policy.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.LinkPolicy.Disabled">
+            <summary>
+            Disables all LAN Manager (LM) modes. 
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.LinkPolicy.MasterSlave">
+            <summary>
+            Enables the master slave switch.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.LinkPolicy.Hold">
+            <summary>
+            Enables Hold mode.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.LinkPolicy.Sniff">
+            <summary>
+            Enables Sniff Mode.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.LinkPolicy.Park">
+            <summary>
+            Enables Park Mode.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.Bluetooth.ClassOfDevice">
+            <summary>
+            Class of Device flags as assigned in the Bluetooth specifications.
+            </summary>
+            <remarks>Defined in Bluetooth Specifications <a href="https://www.bluetooth.org/foundry/assignnumb/document/baseband">Assigned Numbers</a>.</remarks>
+        </member>
+        <member name="T:InTheHand.Net.Sockets.CSADDR_INFO">
+            <summary>
+            This structure contains Windows Sockets address information for a network service or name space provider.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Runtime.InteropServices.GCHandleHelper">
+            <summary>
+            Helper class for GCHandle.
+            </summary>
+        </member>
+        <member name="M:InTheHand.Runtime.InteropServices.GCHandleHelper.Alloc(System.Object)">
+            <summary>
+            Allocates a Pinned <see cref="T:System.Runtime.InteropServices.GCHandle"/>.
+            </summary>
+            <param name="obj">The object to be pinned.</param>
+            <returns></returns>
+        </member>
+        <member name="M:InTheHand.Runtime.InteropServices.GCHandleHelper.AddrOfPinnedObject(System.Runtime.InteropServices.GCHandle)">
+            <summary>
+            Returns the memory address of the pinned item.
+            </summary>
+            <param name="handle">GCHandle allocated as Pinned.</param>
+            <returns>Address of the pinned item.</returns>
+        </member>
+        <member name="T:InTheHand.Net.Bluetooth.SdpAttributeRange">
+            <summary>
+            This structure contains the range to query for attribute or attribute service searching.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.Bluetooth.BTHNS_SETBLOB">
+            <summary>
+            This structure is passed to the BthNsSetService function through the lpqsRegInfo->lpBlob member and contains information on the new service.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.Bluetooth.BLUETOOTH_DEVICE_INFO">
+            <summary>
+            The BLUETOOTH_DEVICE_INFO structure provides information about a Bluetooth device (Windows XP).
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Bluetooth.BLUETOOTH_DEVICE_INFO.Address">
+            <summary>
+            Bluetooth address
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Bluetooth.BLUETOOTH_DEVICE_INFO.ClassOfDevice">
+            <summary>
+            Bluetooth "Class of Device"
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Bluetooth.BLUETOOTH_DEVICE_INFO.Connected">
+            <summary>
+            Device connected/in use
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Bluetooth.BLUETOOTH_DEVICE_INFO.Remembered">
+            <summary>
+            Device remembered
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Bluetooth.BLUETOOTH_DEVICE_INFO.Authenticated">
+            <summary>
+            Device authenticated/paired/bonded
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Bluetooth.BLUETOOTH_DEVICE_INFO.LastSeen">
+            <summary>
+            Last time the device was seen
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Bluetooth.BLUETOOTH_DEVICE_INFO.LastUsed">
+            <summary>
+            Last time the device was used for other than RNR, inquiry, or SDP
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Bluetooth.BLUETOOTH_DEVICE_INFO.Name">
+            <summary>
+            Name of the device. 
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.Bluetooth.SdpRecordTemp">
+            <summary>
+            Dummy SDP record into which we can insert the Guid and channel
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.Sockets.WsaQuerySet">
+            <summary>
+            Summary description for WsaQuerySet.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.WsaQuerySet.ServiceInstanceName">
+            <summary>
+            Returns name of device if specified in query.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.WsaQuerySet.ServiceClassId">
+            <summary>
+            Identifies the services class in the form of a GUID.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.WsaQuerySet.Blob">
+            <summary>
+            This context varies depending upon the function.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.Sockets.BLOB">
+            <summary>
+            This structure is derived from a binary large object (BLOB) and contains information about a block of data.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Windows.Forms.SelectBluetoothDeviceForm">
+            <summary>
+            Managed code dialog for Windows CE systems.
+            </summary>
+        </member>
+        <member name="M:InTheHand.Windows.Forms.SelectBluetoothDeviceForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:InTheHand.Windows.Forms.SelectBluetoothDeviceForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.Bluetooth.BluetoothSecurity">
+            <summary>
+            Handles security between bluetooth devices. Current supported on devices only.
+            </summary>
+        </member>
+        <member name="M:InTheHand.Net.Bluetooth.BluetoothSecurity.SetPin(InTheHand.Net.BluetoothAddress,System.String)">
+            <summary>
+            This function stores the personal identification number (PIN) for the Bluetooth device.
+            <para><b>Not supported on Windows XP</b></para>
+            </summary>
+            <param name="device">Address of remote device.</param>
+            <param name="pin">Pin, alphanumeric string of between 1 and 16 ASCII characters.</param>
+            <returns>True on success, else False.</returns>
+        </member>
+        <member name="M:InTheHand.Net.Bluetooth.BluetoothSecurity.RevokePin(InTheHand.Net.BluetoothAddress)">
+            <summary>
+            This function revokes the personal identification number (PIN) for the Bluetooth device.
+            <para><b>Not supported on Windows XP</b></para>
+            </summary>
+            <param name="device">The remote device.</param>
+            <returns>True on success, else False.</returns>
+        </member>
+        <member name="M:InTheHand.Net.Bluetooth.BluetoothSecurity.PairRequest(InTheHand.Net.BluetoothAddress,System.String)">
+            <summary>
+            Intiates pairing for a remote device.
+            </summary>
+            <param name="device">Remote device with which to pair.</param>
+            <param name="pin">Chosen PIN code, must be between 1 and 16 ASCII characters.</param>
+            <returns></returns>
+        </member>
+        <member name="M:InTheHand.Net.Bluetooth.BluetoothSecurity.SetLinkKey(InTheHand.Net.BluetoothAddress,System.Guid)">
+            <summary>
+            <para><b>Not supported on Windows XP</b></para>
+            </summary>
+            <param name="a"></param>
+            <param name="linkkey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:InTheHand.Net.Bluetooth.BluetoothSecurity.GetPinRequest">
+            <summary>
+            Retrieves the address of the Bluetooth peer device authentication that requires the PIN code.
+            <para><b>Not supported on Windows XP</b></para>
+            </summary>
+            <returns><see cref="T:InTheHand.Net.BluetoothAddress"/> of the remote device, or null if there is no outstanding PIN request.</returns>
+        </member>
+        <member name="M:InTheHand.Net.Bluetooth.BluetoothSecurity.RefusePinRequest(InTheHand.Net.BluetoothAddress)">
+            <summary>
+            Refuses an outstanding PIN request.
+            <para><b>Not supported on Windows XP</b></para>
+            </summary>
+            <param name="device">Address of the requesting device.</param>
+        </member>
+        <member name="T:InTheHand.Net.Bluetooth.BTHNS_RESTRICTIONBLOB">
+            <summary>
+            This structure contains details about a query restriction.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Bluetooth.BTHNS_RESTRICTIONBLOB.Type">
+            <summary>
+            Type of search to perform.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Bluetooth.BTHNS_RESTRICTIONBLOB.ServiceHandle">
+            <summary>
+            Service handle on which to query the attributes in the pRange member.
+            The serviceHandle member is used for attribute searches. 
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Bluetooth.BTHNS_RESTRICTIONBLOB.NumRange">
+            <summary>
+            Used for attribute and service attribute searches.
+            Specifies the number of elements in pRange.
+            </summary>
+        </member>
+        <member name="T:OpenNETCF.Win32.Registry">
+            <summary>
+            Supplies the base <b>RegistryKeys</b> that access values and subkeys in the registry.
+            </summary>
+            <remarks>This class provides the set of standard root keys found in the registry on machines running Windows CE.
+            The registry is a storage facility for information about applications and default system settings.
+            For example, applications can use the registry for storing information that needs to be preserved once the application is closed, and access that same information when the application is reloaded.
+            For instance, you can store color preferences, screen locations, or the size of the window.
+            The keys exposed by Registry are: 
+            <list type="bullet">
+            <item><term>CurrentUser</term><description>Stores information about user preferences.</description></item>
+            <item><term>LocalMachine</term><description>Stores configuration information for the local machine.</description></item>
+            <item><term>ClassesRoot</term><description>Stores information about types (and classes) and their properties.</description></item>  
+            <item><term>Users</term><description>Stores information about the default user configuration.</description></item></list> 
+            Once you have identified the root key under which you want to store/retrieve information from the registry, you can use the RegistryKey class to add or remove subkeys, and manipulate the values for a given key.</remarks>
+        </member>
+        <member name="F:OpenNETCF.Win32.Registry.LocalMachine">
+            <summary>
+            Contains the configuration data for the local machine. This field reads the Windows registry base key HKEY_LOCAL_MACHINE.
+            </summary>
+        </member>
+        <member name="F:OpenNETCF.Win32.Registry.CurrentUser">
+            <summary>
+            Contains information about the current user preferences. This field reads the Windows registry base key HKEY_CURRENT_USER.
+            </summary>
+        </member>
+        <member name="F:OpenNETCF.Win32.Registry.ClassesRoot">
+            <summary>
+             Defines the types (or classes) of documents and the properties associated with those types. This field reads the Windows registry base key HKEY_CLASSES_ROOT.
+            </summary>
+        </member>
+        <member name="F:OpenNETCF.Win32.Registry.Users">
+            <summary>
+            Contains information about the default user configuration. This field reads the Windows registry base key HKEY_USERS.
+            </summary>
+        </member>
+        <member name="T:OpenNETCF.Win32.RegistryKey">
+            <summary>
+            Represents a key level node in the Windows registry. This class is a registry encapsulation.
+            </summary>
+        </member>
+        <member name="M:OpenNETCF.Win32.RegistryKey.ToString">
+            <summary>
+            Retrieves a string representation of this key.
+            </summary>
+            <returns>A string representing the key. If the specified key is invalid (cannot be found) then a null value is returned.</returns>
+            <exception cref="T:System.ObjectDisposedException"> The RegistryKey being manipulated is closed (closed keys cannot be accessed).</exception>
+        </member>
+        <member name="M:OpenNETCF.Win32.RegistryKey.Flush">
+            <summary>
+            Writes all the attributes of the specified open registry key into the registry.
+            </summary>
+            <remarks>The Flush method may also write out parts of or all of the other keys.
+            Calling this function excessively can have a negative effect on an application’s performance.</remarks>
+        </member>
+        <member name="M:OpenNETCF.Win32.RegistryKey.Close">
+            <summary>
+            Closes the key and flushes it to storage if the contents have been modified.
+            </summary>
+            <remarks>Calling this method on system keys will have no effect, since system keys should never be closed.
+            This method does nothing if you call it on an instance of <b>RegistryKey</b> that is already closed.</remarks>
+        </member>
+        <member name="M:OpenNETCF.Win32.RegistryKey.CreateSubKey(System.String)">
+            <summary>
+             Creates a new subkey or opens an existing subkey.
+             The string subKey is not case-sensitive.
+            </summary>
+            <param name="subkey">Name or path of subkey to create or open.</param>
+            <returns>Returns the subkey, or null if the operation failed.</returns>
+            <exception cref="T:System.ArgumentNullException">The specified subkey is null.</exception>
+            <exception cref="T:System.ArgumentException">The length of the specified subkey is longer than the maximum length allowed (255 characters).</exception>
+            <exception cref="T:System.ObjectDisposedException">The RegistryKey on which this method is being invoked is closed (closed keys cannot be accessed).</exception>
+        </member>
+        <member name="M:OpenNETCF.Win32.RegistryKey.CreateSubKey(System.String,System.Boolean)">
+            <summary>
+             Creates a new subkey or opens an existing subkey.
+             The string subKey is not case-sensitive.
+             <para><b>New in v1.3</b></para>
+            </summary>
+            <param name="subkey">Name or path of subkey to create or open.</param>
+            <param name="createVolatile">If true creates a volatile key (Requires Windows CE 5.0).</param>
+            <returns>Returns the subkey, or null if the operation failed.</returns>
+            <exception cref="T:System.ArgumentNullException">The specified subkey is null.</exception>
+            <exception cref="T:System.ArgumentException">The length of the specified subkey is longer than the maximum length allowed (255 characters).</exception>
+            <exception cref="T:System.ObjectDisposedException">The RegistryKey on which this method is being invoked is closed (closed keys cannot be accessed).</exception>
+        </member>
+        <member name="M:OpenNETCF.Win32.RegistryKey.OpenSubKey(System.String)">
+            <summary>
+            Retrieves a subkey as read-only.
+            </summary>
+            <param name="name">Name or path of subkey to open.</param>
+            <returns>The subkey requested, or null if the operation failed.</returns>
+        </member>
+        <member name="M:OpenNETCF.Win32.RegistryKey.OpenSubKey(System.String,System.Boolean)">
+            <summary>
+            Retrieves a specified subkey.
+            </summary>
+            <param name="name">Name or path of subkey to open.</param>
+            <param name="writable">Set to true if you need write access to the key.</param>
+            <returns>The subkey requested, or null if the operation failed.</returns>
+            <exception cref="T:System.ArgumentNullException">name is null.</exception>
+            <exception cref="T:System.ArgumentException">The length of the specified subkey is longer than the maximum length allowed (255 characters).</exception>
+            <exception cref="T:System.ObjectDisposedException">The RegistryKey being manipulated is closed (closed keys cannot be accessed).</exception>
+        </member>
+        <member name="M:OpenNETCF.Win32.RegistryKey.DeleteSubKey(System.String)">
+            <summary>
+            Deletes the specified subkey. The string subkey is not case-sensitive.
+            </summary>
+            <param name="subkey">Name of the subkey to delete.</param>
+            <exception cref="T:System.ArgumentException">The specified subkey is not a valid reference to a registry key.</exception>
+            <exception cref="T:System.ArgumentNullException">The subkey is null.</exception>
+            <exception cref="T:System.ObjectDisposedException">The RegistryKey on which this method is being invoked is closed (closed keys cannot be accessed).</exception>
+        </member>
+        <member name="M:OpenNETCF.Win32.RegistryKey.DeleteSubKey(System.String,System.Boolean)">
+            <summary>
+            Deletes the specified subkey. The string subkey is not case-sensitive.
+            </summary>
+            <param name="subkey">Name of the subkey to delete.</param>
+            <param name="throwOnMissingSubKey">Indicates whether an exception should be raised if the specified subkey cannot be found.
+            If this argument is true and the specified subkey does not exist then an exception is raised.
+            If this argument is false and the specified subkey does not exist, then no action is taken</param>
+            <exception cref="T:System.ArgumentException">The specified subkey is not a valid reference to a registry key (and throwOnMissingSubKey is true).</exception>
+            <exception cref="T:System.ArgumentNullException">The subkey is null.</exception>
+            <exception cref="T:System.ObjectDisposedException">The RegistryKey on which this method is being invoked is closed (closed keys cannot be accessed).</exception>
+        </member>
+        <member name="M:OpenNETCF.Win32.RegistryKey.DeleteSubKeyTree(System.String)">
+            <summary>
+             Deletes a subkey and any child subkeys recursively.
+             The string subKey is not case-sensitive.
+            </summary>
+            <param name="subkey">Subkey to delete.</param>
+            <exception cref="T:System.ArgumentNullException">The subkey parameter is null.</exception>
+            <exception cref="T:System.ArgumentException">Deletion of a root hive is attempted. 
+            The subkey parameter does not match a valid registry subkey.</exception>
+            <exception cref="T:System.ObjectDisposedException">The RegistryKey being manipulated is closed (closed keys cannot be accessed).</exception>
+        </member>
+        <member name="M:OpenNETCF.Win32.RegistryKey.GetSubKeyNames">
+            <summary>
+            Retrieves an array of strings that contains all the subkey names.
+            </summary>
+            <returns>An array of strings that contains the names of the subkeys for the current key.</returns>
+            <exception cref="T:System.ObjectDisposedException">The RegistryKey being manipulated is closed (closed keys cannot be accessed).</exception>
+        </member>
+        <member name="M:OpenNETCF.Win32.RegistryKey.GetValue(System.String)">
+            <summary>
+            Retrieves the data associated with the specified value, or null if the value does not exist.
+            </summary>
+            <param name="name">Name of the value to retrieve.</param>
+            <returns>The data associated with name , or null if the value does not exist.</returns>
+            <exception cref="T:System.ArgumentException">The RegistryKey being manipulated does not exist.</exception>
+            <exception cref="T:System.ObjectDisposedException">The RegistryKey being manipulated is closed (closed keys cannot be accessed).</exception>
+        </member>
+        <member name="M:OpenNETCF.Win32.RegistryKey.GetValue(System.String,System.Object)">
+            <summary>
+            Retrieves the specified value, or the default value you provide if the specified value is not found. 
+            </summary>
+            <param name="name">Name of the value to retrieve.</param>
+            <param name="defaultValue">Value to return if name does not exist.</param>
+            <returns>The data associated with name, or defaultValue if name is not found.</returns>
+            <exception cref="T:System.ArgumentException">The RegistryKey being manipulated does not exist.</exception>
+            <exception cref="T:System.ObjectDisposedException">The RegistryKey being manipulated is closed (closed keys cannot be accessed).</exception>
+        </member>
+        <member name="M:OpenNETCF.Win32.RegistryKey.GetValueKind(System.String)">
+            <summary>
+            Retrieves the registry data type of the value associated with the specified name.
+            <para><b>New in v1.3</b></para>
+            </summary>
+            <param name="name">The name of the value whose registry data type is to be retrieved.</param>
+            <returns>A <see cref="T:OpenNETCF.Win32.RegistryValueKind"/> value representing the registry data type of the value associated with name.</returns>
+        </member>
+        <member name="M:OpenNETCF.Win32.RegistryKey.SetValue(System.String,System.Object)">
+            <summary>
+            Sets the specified value.
+            </summary>
+            <param name="name">Name of value to store data in.</param>
+            <param name="value">Data to store.</param>
+            <exception cref="T:System.ArgumentException">The length of the specified value is longer than the maximum length allowed (255 characters).</exception>
+            <exception cref="T:System.ArgumentNullException">value is null.</exception>
+            <exception cref="T:System.ObjectDisposedException">The RegistryKey being set is closed (closed keys cannot be accessed).</exception>
+            <exception cref="T:System.UnauthorizedAccessException">The RegistryKey being set is readonly, and cannot be written to (for example, it is a root-level node, or the key has not been opened with write-access).</exception>
+        </member>
+        <member name="M:OpenNETCF.Win32.RegistryKey.SetValue(System.String,System.Object,OpenNETCF.Win32.RegistryValueKind)">
+            <summary>
+            Sets the value of a name/value pair in the registry key, using the specified registry data type.
+            <para><b>New in v1.3</b></para>
+            </summary>
+            <param name="name">Name of value to store data in.</param>
+            <param name="value">Data to store.</param>
+            <param name="valueKind">The registry data type to use when storing the data.</param>
+            <exception cref="T:System.ArgumentException">The length of the specified value is longer than the maximum length allowed (255 characters).</exception>
+            <exception cref="T:System.ArgumentNullException">value is null.</exception>
+            <exception cref="T:System.ObjectDisposedException">The RegistryKey being set is closed (closed keys cannot be accessed).</exception>
+            <exception cref="T:System.UnauthorizedAccessException">The RegistryKey being set is readonly, and cannot be written to (for example, it is a root-level node, or the key has not been opened with write-access).</exception>
+        </member>
+        <member name="M:OpenNETCF.Win32.RegistryKey.DeleteValue(System.String)">
+            <summary>
+            Deletes the specified value from this key.
+            </summary>
+            <param name="name">Name of the value to delete.</param>
+            <exception cref="T:System.ArgumentException">name is not a valid reference to a value (and throwOnMissingValue is true) or name is null</exception>
+            <exception cref="T:System.ObjectDisposedException">The RegistryKey being manipulated is closed (closed keys cannot be accessed).</exception>
+            <exception cref="T:System.UnauthorizedAccessException">The RegistryKey being manipulated is readonly.</exception>
+        </member>
+        <member name="M:OpenNETCF.Win32.RegistryKey.DeleteValue(System.String,System.Boolean)">
+            <summary>
+            Deletes the specified value from this key.
+            </summary>
+            <param name="name">Name of the value to delete.</param>
+            <param name="throwOnMissingValue">Indicates whether an exception should be raised if the specified value cannot be found.
+            If this argument is true and the specified value does not exist then an exception is raised.
+            If this argument is false and the specified value does not exist, then no action is taken</param>
+            <exception cref="T:System.ArgumentException">name is not a valid reference to a value (and throwOnMissingValue is true) or name is null</exception>
+            <exception cref="T:System.ObjectDisposedException">The RegistryKey being manipulated is closed (closed keys cannot be accessed).</exception>
+            <exception cref="T:System.UnauthorizedAccessException">The RegistryKey being manipulated is readonly.</exception>
+        </member>
+        <member name="M:OpenNETCF.Win32.RegistryKey.GetValueNames">
+            <summary>
+            Retrieves an array of strings that contains all the value names associated with this key.
+            </summary>
+            <returns>An array of strings that contains the value names for the current key.</returns>
+            <remarks>If no value names for the key are found, an empty array is returned.
+            <para>All RegistryKeys are assigned a default value.
+            This is not counted as a value name, and is not returned as part of the result set.</para></remarks>
+            <exception cref="T:System.ObjectDisposedException">The RegistryKey being manipulated is closed (closed keys cannot be accessed).</exception>
+        </member>
+        <member name="M:OpenNETCF.Win32.RegistryKey.Dispose">
+            <summary>
+            Free up resources used by the RegistryKey
+            </summary>
+        </member>
+        <member name="P:OpenNETCF.Win32.RegistryKey.Name">
+            <summary>
+            Retrieves the name of the key.
+            </summary>
+        </member>
+        <member name="P:OpenNETCF.Win32.RegistryKey.SubKeyCount">
+            <summary>
+            Retrieves the count of subkeys at the base level, for the current key.
+            </summary>
+            <exception cref="T:System.ObjectDisposedException"> The RegistryKey being manipulated is closed (closed keys cannot be accessed).</exception>
+        </member>
+        <member name="P:OpenNETCF.Win32.RegistryKey.ValueCount">
+            <summary>
+            Retrieves the count of values in the key.
+            </summary>
+            <exception cref="T:System.ObjectDisposedException"> The RegistryKey being manipulated is closed (closed keys cannot be accessed).</exception>
+        </member>
+        <member name="T:OpenNETCF.Win32.RegistryValueKind">
+            <summary>
+            Specifies the data types to use when storing values in the registry, or identifies the data type of a value in the registry.
+            <para><b>New in v1.3</b></para>
+            </summary>
+            <remarks>The RegistryValueKind enumeration defines the set of supported registry data types and the value that is used for unsupported types (Unknown).
+            <para>Use the <see cref="M:OpenNETCF.Win32.RegistryKey.GetValueKind(System.String)"/> method to determine the data type of a registry key value before retrieving the value.
+            When you set a registry key value, use the <see cref="M:OpenNETCF.Win32.RegistryKey.SetValue(System.String,System.Object)"/> method to specify the registry data type explicitly.</para></remarks>
+        </member>
+        <member name="F:OpenNETCF.Win32.RegistryValueKind.Unknown">
+            <summary>
+            Indicates an unsupported registry data type.
+            Use this value to specify that SetValue should determine the appropriate registry data type when storing a name/value pair.
+            </summary>
+        </member>
+        <member name="F:OpenNETCF.Win32.RegistryValueKind.String">
+            <summary>
+            Specifies a null-terminated string.
+            This value is equivalent to the Win32 API registry data type REG_SZ.
+            </summary>
+        </member>
+        <member name="F:OpenNETCF.Win32.RegistryValueKind.ExpandString">
+            <summary>
+            Specifies a null-terminated string that contains unexpanded references to environment variables, such as %PATH%, that are expanded when the value is retrieved.
+            This value is equivalent to the Win32 API registry data type REG_EXPAND_SZ.
+            </summary>
+        </member>
+        <member name="F:OpenNETCF.Win32.RegistryValueKind.Binary">
+            <summary>
+            Specifies binary data in any form.
+            This value is equivalent to the Win32 API registry data type REG_BINARY.
+            </summary>
+        </member>
+        <member name="F:OpenNETCF.Win32.RegistryValueKind.DWord">
+            <summary>
+            Specifies a 32-bit binary number.
+            This value is equivalent to the Win32 API registry data type REG_DWORD.
+            </summary>
+        </member>
+        <member name="F:OpenNETCF.Win32.RegistryValueKind.MultiString">
+            <summary>
+            Specifies an array of null-terminated strings, terminated by two null characters.
+            This value is equivalent to the Win32 API registry data type REG_MULTI_SZ.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.Bluetooth.BluetoothVersion">
+            <summary>
+            Stores version information for a Bluetooth device.
+            </summary>
+        </member>
+        <member name="M:InTheHand.Net.Bluetooth.BluetoothVersion.ToString">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:InTheHand.Net.Bluetooth.BluetoothVersion.HciVersion">
+            <summary>
+            Version of the current Host Controller Interface (HCI) in the Bluetooth hardware.
+            </summary>
+            <remarks>This value changes only when new versions of the Bluetooth hardware are created for the new Bluetooth Special Interest Group (SIG) specifications.</remarks>
+        </member>
+        <member name="P:InTheHand.Net.Bluetooth.BluetoothVersion.LmpVersion">
+            <summary>
+            Version of the current Link Manager Protocol (LMP) in the Bluetooth hardware.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Bluetooth.BluetoothVersion.Manufacturer">
+            <summary>
+            Name of the Bluetooth hardware manufacturer.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Bluetooth.BluetoothVersion.Features">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.Bluetooth.BTH_LOCAL_VERSION">
+            <summary>
+            Summary description for BTH_LOCAL_VERSION.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.Bluetooth.BluetoothService">
+            <summary>
+            Standard Bluetooth Profile identifiers.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.Empty">
+            <summary>
+            Represents an empty service Guid.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.BluetoothBase">
+            <summary>
+            Represents the base Guid from which all standard Bluetooth profiles are derived - not used for connections.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.ServiceDiscoveryServer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.BrowseGroupDescriptor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.PublicBrowseGroup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.SerialPort">
+            <summary>
+            Provides a basic Serial emulation connect over Bluetooth.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.LanAccessUsingPpp">
+            <summary>
+            Used to establish PPP connections over RFComm channels.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.DialupNetworking">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.IrMCSync">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.ObexObjectPush">
+            <summary>
+            Used for sending binary objects between devices.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.ObexFileTransfer">
+            <summary>
+            OBEX version of an FTP server
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.IrMCSyncCommand">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.Headset">
+            <summary>
+            Supports Bluetooth headset devices.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.CordlessTelephony">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.AudioSource">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.AudioSink">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.AVRemoteControlTarget">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.AdvancedAudioDistribution">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.AVRemoteControl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.VideoConferencing">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.Intercom">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.Fax">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.HeadsetAudioGateway">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.Wap">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.WapClient">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.Panu">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.Nap">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.GN">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.DirectPrinting">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.ReferencePrinting">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.Imaging">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.ImagingResponder">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.ImagingAutomaticArchive">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.ImagingReferenceObjects">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.Handsfree">
+            <summary>
+            Supports hands free kits such as a car kits which provide audio and more advanced call control than the Headset profile.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.HandsfreeAudioGateway">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.DirectPrintingReferenceObjects">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.ReflectedUI">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.BasicPrinting">
+            <summary>
+            Used for printing simple text, HTML, vCard objects and similar.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.PrintingStatus">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.HumanInterfaceDevice">
+            <summary>
+            Supports human interface devices such as keyboards and mice.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.HardcopyCableReplacement">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.HardcopyCableReplacementPrint">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.HardcopyCableReplacementScan">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.CommonIsdnAccess">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.VideoConferencingGW">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.UdiMT">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.UdiTA">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.AudioVideo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.SimAccess">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.PnPInformation">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.GenericNetworking">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.GenericFileTransfer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.GenericAudio">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.GenericTelephony">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.UPnp">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.UPnpIP">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.UPnpIPPan">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.UPnpIPLap">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.UPnpIPL2Cap">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.VideoSource">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.VideoSink">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.BluetoothService.VideoDistribution">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.Sockets.BluetoothListener">
+            <summary>
+            Listens for connections from Bluetooth network clients.
+            </summary>
+            <remarks>The <see cref="T:InTheHand.Net.Sockets.BluetoothListener"/> class provides simple methods that listen for and accept incoming connection requests in blocking synchronous mode.
+            You can use either a <see cref="T:InTheHand.Net.Sockets.BluetoothClient"/> or a <see cref="T:System.Net.Sockets.Socket"/> to connect with a <see cref="T:InTheHand.Net.Sockets.BluetoothListener"/></remarks>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.BluetoothListener.#ctor(InTheHand.Net.BluetoothEndPoint)">
+            <summary>
+            Initializes a new instance of the <see cref="!:OpenNETCF.Net.Sockets.BluetoothListener"/> class.
+            </summary>
+            <param name="ep">The device address to monitor for making a connection.</param>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.BluetoothListener.#ctor(System.Guid)">
+            <summary>
+            Initializes a new instance of the <see cref="T:InTheHand.Net.Sockets.BluetoothListener"/> class.
+            </summary>
+            <param name="service">The Bluetooth service to listen for.</param>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.BluetoothListener.#ctor(System.Guid,System.Byte[],System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:InTheHand.Net.Sockets.BluetoothListener"/> class.
+            <para><b>New in v1.5</b></para>
+            </summary>
+            <param name="service">The Bluetooth service to listen for.</param>
+            <param name="sdpRecord">Prepared SDP Record to publish</param>
+            <param name="channelOffset">Offset into the SDP record in which to place the actual channel.</param>
+            <remarks>It is recommended that you use the alternative constructor which takes just a service guid for your custom profile implementations.</remarks>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.BluetoothListener.Start">
+            <summary>
+            Starts the socket to listen for incoming connections.
+            </summary>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.BluetoothListener.Stop">
+            <summary>
+            Stops the socket from monitoring connections.
+            </summary>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.BluetoothListener.AcceptSocket">
+            <summary>
+            Creates a new socket for a connection.
+            </summary>
+            <remarks>AcceptSocket is a blocking method that returns a <see cref="T:System.Net.Sockets.Socket"/> that you can use to send and receive data.
+            If you want to avoid blocking, use the <see cref="M:InTheHand.Net.Sockets.BluetoothListener.Pending"/> method to determine if connection requests are available in the incoming connection queue.
+            <para>The <see cref="T:System.Net.Sockets.Socket"/> returned is initialized with the address and channel number of the remote device.
+            You can use any of the Send and Receive methods available in the <see cref="T:System.Net.Sockets.Socket"/> class to communicate with the remote device.
+            When you are finished using the <see cref="T:System.Net.Sockets.Socket"/>, be sure to call its <see cref="M:System.Net.Sockets.Socket.Close"/> method.
+            If your application is relatively simple, consider using the <see cref="M:InTheHand.Net.Sockets.BluetoothListener.AcceptBluetoothClient"/> method rather than the AcceptSocket method.
+            <see cref="T:InTheHand.Net.Sockets.BluetoothClient"/> provides you with simple methods for sending and receiving data over a network in blocking synchronous mode.</para></remarks>
+            <returns>A <see cref="T:System.Net.Sockets.Socket"/> used to send and receive data.</returns>
+            <exception cref="T:System.InvalidOperationException">Listener is stopped.</exception>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.BluetoothListener.AcceptBluetoothClient">
+            <summary>
+            Creates a client object for a connection when the specified service or endpoint is detected by the listener component.
+            </summary>
+            <remarks>AcceptTcpClient is a blocking method that returns a <see cref="T:InTheHand.Net.Sockets.BluetoothClient"/> that you can use to send and receive data.
+            Use the <see cref="M:InTheHand.Net.Sockets.BluetoothListener.Pending"/> method to determine if connection requests are available in the incoming connection queue if you want to avoid blocking.
+            <para>Use the <see cref="M:InTheHand.Net.Sockets.BluetoothClient.GetStream"/> method to obtain the underlying <see cref="T:System.Net.Sockets.NetworkStream"/> of the returned <see cref="T:InTheHand.Net.Sockets.BluetoothClient"/>.
+            The <see cref="T:System.Net.Sockets.NetworkStream"/> will provide you with methods for sending and receiving with the remote host.
+            When you are through with the <see cref="T:InTheHand.Net.Sockets.BluetoothClient"/>, be sure to call its <see cref="!:Close"/> method.
+            If you want greater flexibility than a <see cref="T:InTheHand.Net.Sockets.BluetoothClient"/> offers, consider using <see cref="M:InTheHand.Net.Sockets.BluetoothListener.AcceptSocket"/>.</para></remarks>
+            <returns>A <see cref="T:InTheHand.Net.Sockets.BluetoothClient"/> component.</returns>
+            <exception cref="T:System.InvalidOperationException">Listener is stopped.</exception>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.BluetoothListener.Pending">
+            <summary>
+            Determines if there is a connection pending.
+            </summary>
+            <returns>true if there is a connection pending; otherwise, false.</returns>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.BluetoothListener.Dispose">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.BluetoothListener.Dispose(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:InTheHand.Net.Sockets.BluetoothListener.Finalize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.BluetoothListener.LocalEndPoint">
+            <summary>
+             Gets the underlying <see cref="T:InTheHand.Net.BluetoothEndPoint"/> of the current <see cref="T:InTheHand.Net.Sockets.BluetoothListener"/>.  
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.Sockets.BluetoothListener.Server">
+            <summary>
+            Gets the underlying network <see cref="T:System.Net.Sockets.Socket"/>.
+            <para><b>New in v1.4</b></para>
+            </summary>
+            <value>The underlying <see cref="T:System.Net.Sockets.Socket"/>.</value>
+            <remarks><see cref="T:InTheHand.Net.Sockets.BluetoothListener"/> creates a <see cref="T:System.Net.Sockets.Socket"/> to listen for incoming client connection requests.
+            Classes deriving from <see cref="T:InTheHand.Net.Sockets.BluetoothListener"/> can use this property to get this <see cref="T:System.Net.Sockets.Socket"/>.
+            Use the underlying <see cref="T:System.Net.Sockets.Socket"/> returned by the <see cref="P:InTheHand.Net.Sockets.BluetoothListener.Server"/> property if you require access beyond that which <see cref="T:InTheHand.Net.Sockets.BluetoothListener"/> provides.
+            <para>Note <see cref="P:InTheHand.Net.Sockets.BluetoothListener.Server"/> property only returns the <see cref="T:System.Net.Sockets.Socket"/> used to listen for incoming client connection requests.
+            Use the <see cref="M:InTheHand.Net.Sockets.BluetoothListener.AcceptSocket"/> method to accept a pending connection request and obtain a <see cref="T:System.Net.Sockets.Socket"/> for sending and receiving data.
+            You can also use the <see cref="M:InTheHand.Net.Sockets.BluetoothListener.AcceptBluetoothClient"/> method to accept a pending connection request and obtain a <see cref="T:InTheHand.Net.Sockets.BluetoothClient"/> for sending and receiving data.</para></remarks>
+        </member>
+        <member name="T:InTheHand.Net.Sockets.BluetoothSocketOptionName">
+            <summary>
+            Defines <see cref="T:System.Net.Sockets.Socket"/> configuration option names for the <see cref="T:System.Net.Sockets.Socket"/> class when used with Bluetooth.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.Authenticate">
+            <summary>
+            On connected socket, triggers authentication.
+            On not connected socket, forces authentication on connection.
+            For incoming connection this means that connection is rejected if authentication cannot be performed.
+            </summary>
+            <remarks>The optval and optlen parameters are ignored; however, Winsock implementation on Windows CE requires optlen to be at least 4 and optval to point to at least an integer datum.</remarks>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.XPAuthenticate">
+            <summary>
+            Toggles authentication under Windows XP.
+            <para><b>New in v1.5</b></para>
+            </summary>
+            <remarks>optlen=sizeof(ULONG), optval = &amp;(ULONG)TRUE/FALSE</remarks>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.Encrypt">
+            <summary>
+            On a connected socket, this command turns encryption on or off.
+            On an unconnected socket, this forces encryption to be on or off on connection.
+            For an incoming connection, this means that the connection is rejected if the encryption cannot be turned on.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.SetPin">
+            <summary>
+            This sets or revokes PIN code to use with a connection or socket.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.SetLink">
+            <summary>
+            This sets or revokes link key to use with a connection or peer device.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.GetLink">
+            <summary>
+            Returns link key associated with peer Bluetooth device.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.XPMtu">
+            <summary>
+            Get or set the default MTU on Windows XP.
+            <para><b>New in v1.5</b></para>
+            </summary>
+            <remarks>optlen=sizeof(ULONG), optval = &amp;mtu</remarks>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.SetMtu">
+            <summary>
+            This sets default MTU (maximum transmission unit) for connection negotiation.
+            While allowed for connected socket, it has no effect if the negotiation has already completed.
+            Setting it on listening socket will propagate the value for all incoming connections.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.GetMtu">
+            <summary>
+            Returns MTU (maximum transmission unit).
+            For connected socket, this is negotiated value, for server (accepting) socket it is MTU proposed for negotiation on connection request.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.XPMtuMaximum">
+            <summary>
+            Get or set the maximum MTU on Windows XP.
+            <para><b>New in v1.5</b></para>
+            </summary>
+            <remarks>optlen=sizeof(ULONG), optval = &amp;max. mtu</remarks>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.SetMtuMaximum">
+            <summary>
+            This sets maximum MTU for connection negotiation.
+            While allowed for connected socket, it has no effect if the negotiation has already completed.
+            Setting it on listening socket will propagate the value for all incoming connections.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.GetMtuMaximum">
+            <summary>
+            Returns maximum MTU acceptable MTU value for a connection on this socket.
+            Because negotiation has already happened, has little meaning for connected socket.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.XPMtuMinimum">
+            <summary>
+            Get or set the minimum MTU on Windows XP.
+            <para><b>New in v1.5</b></para>
+            </summary>
+            <remarks>optlen=sizeof(ULONG), optval = &amp;min. mtu</remarks>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.SetMtuMinimum">
+            <summary>
+            This sets minimum MTU for connection negotiation.
+            While allowed for connected socket, it has no effect if the negotiation has already completed.
+            Setting it on listening socket will propagate the value for all incoming connections.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.GetMtuMinimum">
+            <summary>
+            Returns minimum MTU acceptable MTU value for a connection on this socket.
+            Because negotiation has already happened, has little meaning for connected socket. 
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.SetXOnLimit">
+            <summary>
+            This sets XON limit.
+            Setting it on listening socket will propagate the value for all incoming connections.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.GetXOnLimit">
+            <summary>
+            Returns XON limit for a connection.
+            XON limit is only used for peers that do not support credit-based flow control (mandatory in the Bluetooth Core Specification version 1.1).
+            When amount of incoming data received, but not read by an application for a given connection grows past this limit, a flow control command is sent to the peer requiring suspension of transmission.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.SetXOffLimit">
+            <summary>
+            This sets XOFF limit.
+            Setting it on listening socket will propagate the value for all incoming connections.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.GetXOffLimit">
+            <summary>
+            Returns XOFF limit for a connection.
+            XOFF limit is only used for peers that do not support credit-based flow control (mandatory in the Bluetooth Core Specification 1.1).
+            If flow has been suspended because of buffer run-up, when amount of incoming data received, but not read by an application for a given connection falls below this limit, a flow control command is sent to the peer allowing continuation of transmission.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.SetSendBuffer">
+            <summary>
+            Specifies maximum amount of data that can be buffered inside RFCOMM (this is amount of data before call to send blocks).
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.GetSendBuffer">
+            <summary>
+             Returns maximum amount of data that can be buffered inside RFCOMM (this is amount of data before call to send blocks).
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.SetReceiveBuffer">
+            <summary>
+            Specifies maximum amount of data that can be buffered for a connection.
+            This buffer size is used to compute number of credits granted to peer device when credit-based flow control is implemented.
+            This specifies the maximum amount of data that can be buffered.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.GetReceiveBuffer">
+            <summary>
+            Returns maximum amount of data that can be buffered for a connection.
+            This buffer size is used to compute number of credits granted to peer device when credit-based flow control is implemented.
+            This specifies the maximum amount of data that can be buffered.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.GetV24Break">
+            <summary>
+            Retrieves last v24 and break signals set through MSC command from peer device.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.GetRls">
+            <summary>
+            Retrieves last line status signals set through RLS command from peer device.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.SendMsc">
+            <summary>
+            Sends MSC command. V24 and breaks are as specified in RFCOMM Specification.
+            Only modem signals and breaks can be controlled, RFCOMM reserved fields such as flow control are ignored and should be set to 0.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.SendRls">
+            <summary>
+            Sends RLS command.
+            Argument is as specified in RFCOMM Specification.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.GetFlowType">
+            <summary>
+            Gets flow control type on the connected socket.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.SetPageTimeout">
+            <summary>
+            Sets the page timeout for the card.
+            The socket does not have to be connected.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.GetPageTimeout">
+            <summary>
+            Gets the current page timeout.
+            The socket does not have to be connected.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.SetScan">
+            <summary>
+            Sets the scan mode for the card.
+            The socket does not have to be connected.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.GetScan">
+            <summary>
+            Gets the current scan mode.
+            The socket does not have to be connected.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.SetCod">
+            <summary>
+            Sets the class of the device.
+            The socket does not have to be connected.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.GetCod">
+            <summary>
+            Retrieve the Class of Device.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.GetLocalVersion">
+            <summary>
+            Get the version information from the Bluetooth adapter.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.GetRemoteVersion">
+            <summary>
+            Get the version of the remote adapter.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.GetAuthenticationEnabled">
+            <summary>
+            Retrieves the authentication settings.
+            The socket does not have to be connected.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.SetAuthenticationEnabled">
+            <summary>
+            Sets the authentication policy of the device.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.ReadRemoteName">
+            <summary>
+            Reads the remote name of the device.
+            The socket does not have to be connected.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.GetLinkPolicy">
+            <summary>
+            Retrieves the link policy of the device.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.SetLinkPolicy">
+            <summary>
+            Sets the link policy for an existing baseband connection.
+            The socket must be connected.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.EnterHoldMode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.EnterSniffMode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.ExitSniffMode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.EnterParkMode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.ExitParkMode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionName.GetMode">
+            <summary>
+            Gets the current mode of the connection.
+            The mode can either be sniff, park, or hold. The socket must be connected.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.Sockets.BluetoothSocketOptionLevel">
+            <summary>
+            Defines Bluetooth specific socket option levels for the <see cref="M:System.Net.Sockets.Socket.SetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName,System.Int32)"/> and <see cref="M:System.Net.Sockets.Socket.GetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName)"/> methods.   
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionLevel.RFComm">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionLevel.BthTdi">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothSocketOptionLevel.Sdp">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.Sockets.BluetoothProtocolType">
+            <summary>
+            Specifies the Bluetooth specific protocols that the <see cref="T:System.Net.Sockets.Socket"/> class supports.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothProtocolType.Sdp">
+            <summary>
+            Service Discovery Protocol
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothProtocolType.Udp">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothProtocolType.RFComm">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothProtocolType.Tcp">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothProtocolType.TcsBin">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothProtocolType.TcsAt">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothProtocolType.Obex">
+            <summary>
+            Object Exchange
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothProtocolType.L2Cap">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.Sockets.BluetoothAddressFamily">
+            <summary>
+            Specifies the Bluetooth specific addressing scheme that an instance of the <see cref="T:System.Net.Sockets.Socket"/> class can use.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Sockets.BluetoothAddressFamily.Bluetooth">
+            <summary>
+            Bluetooth address.
+            </summary>
+            <value>32</value>
+        </member>
+        <member name="T:InTheHand.IO.Ports.BluetoothSerialPort">
+            <summary>
+            Represents a virtual COM port.
+            </summary>
+        </member>
+        <member name="M:InTheHand.IO.Ports.BluetoothSerialPort.CreateServer(System.String,System.Int32,System.Guid)">
+            <summary>
+            Create a virtual server port to listen for incoming connections.
+            </summary>
+            <param name="portPrefix">Port name prefix e.g. "COM"</param>
+            <param name="portIndex">Port index e.g. 5</param>
+            <param name="service">Bluetooth service.</param>
+            <returns></returns>
+        </member>
+        <member name="M:InTheHand.IO.Ports.BluetoothSerialPort.CreateClient(System.String,System.Int32,InTheHand.Net.BluetoothEndPoint)">
+            <summary>
+            Create a client port for connection to a remote device.
+            </summary>
+            <param name="portPrefix">Port name prefix e.g. "COM"</param>
+            <param name="portIndex">Port index e.g. 5</param>
+            <param name="endPoint">Remote device to connect to</param>
+            <returns>A BluetoothSerialPort.</returns>
+        </member>
+        <member name="M:InTheHand.IO.Ports.BluetoothSerialPort.Close">
+            <summary>
+            Closes the virtual serial port releasing all resources.
+            </summary>
+        </member>
+        <member name="M:InTheHand.IO.Ports.BluetoothSerialPort.Dispose(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:InTheHand.IO.Ports.BluetoothSerialPort.Dispose">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:InTheHand.IO.Ports.BluetoothSerialPort.Finalize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:InTheHand.IO.Ports.BluetoothSerialPort.PortName">
+            <summary>
+            The full representation of the port name e.g. "COM5:"
+            </summary>
+        </member>
+        <member name="P:InTheHand.IO.Ports.BluetoothSerialPort.Address">
+            <summary>
+            The address of the remote device to which this port will connect (Client Ports only).
+            </summary>
+        </member>
+        <member name="P:InTheHand.IO.Ports.BluetoothSerialPort.Service">
+            <summary>
+            The Bluetooth service to connect to.
+            </summary>
+        </member>
+        <member name="P:InTheHand.IO.Ports.BluetoothSerialPort.PortIndex">
+            <summary>
+            Port index.
+            </summary>
+        </member>
+        <member name="P:InTheHand.IO.Ports.BluetoothSerialPort.Local">
+            <summary>
+            Specifies whether the port is a local service or for outgoing connections.
+            </summary>
+            <value>TRUE for a server port that accepts connections, or to FALSE for a client port that is used to creating outgoing connections.</value>
+        </member>
+        <member name="T:InTheHand.Net.Bluetooth.BTHNS_RESULT">
+            <summary>
+            Bluetooth specific flags returned from WSALookupServiceNext 
+            in WSAQUERYSET.dwOutputFlags in response to device inquiry.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.Bluetooth.BLUETOOTH_FIND_RADIO_PARAMS">
+            <summary>
+            The BLUETOOTH_FIND_RADIO_PARAMS structure facilitates enumerating installed Bluetooth radios.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.Bluetooth.HardwareStatus">
+            <summary>
+            Specifies the current status of the Bluetooth hardware.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.HardwareStatus.Unknown">
+            <summary>
+            Status cannot be determined.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.HardwareStatus.NotPresent">
+            <summary>
+            Bluetooth radio not present.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.HardwareStatus.Initializing">
+            <summary>
+            Bluetooth radio is in the process of starting up.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.HardwareStatus.Running">
+            <summary>
+            Bluetooth radio is active.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.HardwareStatus.Shutdown">
+            <summary>
+            Bluetooth radio is in the process of shutting down.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.Bluetooth.HardwareStatus.Error">
+            <summary>
+            Bluetooth radio is in an error state.
+            </summary>
+        </member>
+        <member name="T:InTheHand.Net.BluetoothEndPoint">
+            <summary>
+            Establishes connections to a peer device and provides Bluetooth port information.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.BluetoothEndPoint.MinPort">
+            <summary>
+            Specifies the minimum value that can be assigned to the Port property.
+            </summary>
+        </member>
+        <member name="F:InTheHand.Net.BluetoothEndPoint.MaxPort">
+            <summary>
+            Specifies the maximum value that can be assigned to the Port property.
+            </summary>
+        </member>
+        <member name="M:InTheHand.Net.BluetoothEndPoint.#ctor(InTheHand.Net.BluetoothAddress,System.Guid)">
+            <summary>
+            Initializes a new instance of the <see cref="T:InTheHand.Net.BluetoothEndPoint"/> class with the specified address and service.
+            </summary>
+            <param name="address">The Bluetooth address of the device. A six byte array.</param>
+            <param name="service">The Bluetooth service to use.</param>
+        </member>
+        <member name="M:InTheHand.Net.BluetoothEndPoint.#ctor(InTheHand.Net.BluetoothAddress,System.Guid,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:InTheHand.Net.BluetoothEndPoint"/> class with the specified address, service and port number.
+            </summary>
+            <param name="address">The Bluetooth address of the device. A six byte array.</param>
+            <param name="service">The Bluetooth service to use.</param>
+            <param name="port">Radio channel to use, -1 for any.</param>
+        </member>
+        <member name="M:InTheHand.Net.BluetoothEndPoint.Serialize">
+            <summary>
+            Serializes endpoint information into a <see cref="T:System.Net.SocketAddress"/> instance.
+            </summary>
+            <returns>A <see cref="T:System.Net.SocketAddress"/> instance containing the socket address for the endpoint.</returns>
+        </member>
+        <member name="M:InTheHand.Net.BluetoothEndPoint.Create(System.Net.SocketAddress)">
+            <summary>
+            Creates an endpoint from a socket address.
+            </summary>
+            <param name="socketAddress">The <see cref="T:System.Net.SocketAddress"/> to use for the endpoint.</param>
+            <returns>An <see cref="T:System.Net.EndPoint"/> instance using the specified socket address.</returns>
+        </member>
+        <member name="M:InTheHand.Net.BluetoothEndPoint.Equals(System.Object)">
+            <summary>
+            Compares two <see cref="T:InTheHand.Net.BluetoothEndPoint"/> instances for equality.
+            <para><b>New in v1.5</b></para>
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:InTheHand.Net.BluetoothEndPoint.GetHashCode">
+            <summary>
+            Returns the hash code for this instance.
+            <para><b>New in v1.5</b></para>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:InTheHand.Net.BluetoothEndPoint.AddressFamily">
+            <summary>
+            Gets the address family of the Bluetooth address. 
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.BluetoothEndPoint.Address">
+            <summary>
+            Gets or sets the Bluetooth address of the endpoint.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.BluetoothEndPoint.Service">
+            <summary>
+            Gets or sets the Bluetooth service to use for the connection.
+            </summary>
+        </member>
+        <member name="P:InTheHand.Net.BluetoothEndPoint.Port">
+            <summary>
+            Gets or sets the service channel number of the endpoint.
+            </summary>
+        </member>
+    </members>
+</doc>
