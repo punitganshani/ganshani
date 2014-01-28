@@ -1,0 +1,7 @@
+C:\Punit Ganshani\R&D\XecMe\MySample\XecMe.Sample\XecMe.Tasks\XecMeSamples\bin\Debug\LongRunningTaskAsService.config
+C:\Punit Ganshani\R&D\XecMe\MySample\XecMe.Sample\XecMe.Tasks\XecMeSamples\bin\Debug\SimpleService.config
+C:\Punit Ganshani\R&D\XecMe\MySample\XecMe.Sample\XecMe.Tasks\XecMeSamples\bin\Debug\XecMeSamples.dll
+C:\Punit Ganshani\R&D\XecMe\MySample\XecMe.Sample\XecMe.Tasks\XecMeSamples\bin\Debug\XecMeSamples.pdb
+C:\Punit Ganshani\R&D\XecMe\MySample\XecMe.Sample\XecMe.Tasks\XecMeSamples\obj\Debug\XecMeSamples.dll
+C:\Punit Ganshani\R&D\XecMe\MySample\XecMe.Sample\XecMe.Tasks\XecMeSamples\obj\Debug\XecMeSamples.pdb
+C:\Punit Ganshani\R&D\XecMe\MySample\XecMe.Sample\XecMe.Tasks\XecMeSamples\obj\Debug\XecMeSamples.csprojResolveAssemblyReference.cache

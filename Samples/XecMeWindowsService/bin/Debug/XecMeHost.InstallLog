@@ -1,0 +1,35 @@
+﻿Installing assembly 'C:\Punit Ganshani\R&D\XecMe\MySample\XecMe.Sample\XecMe.Tasks\XecMeSamples\bin\Debug\XecMeHost.exe'.
+Affected parameters are:
+   assemblypath = C:\Punit Ganshani\R&D\XecMe\MySample\XecMe.Sample\XecMe.Tasks\XecMeSamples\bin\Debug\XecMeHost.exe
+   c = C:\Punit Ganshani\R&D\XecMe\MySample\XecMe.Sample\XecMe.Tasks\XecMeSamples\bin\Debug\LongRuninngTaskAsService.config
+   p = C:\Punit Ganshani\R&D\XecMe\MySample\XecMe.Sample\XecMe.Tasks\XecMeSamples\bin\Debug\XecMeSamples.dll
+   v = 
+   logtoconsole = 
+   i = 
+   n = LongRuninngTaskAsService
+   logfile = C:\Punit Ganshani\R&D\XecMe\MySample\XecMe.Sample\XecMe.Tasks\XecMeSamples\bin\Debug\XecMeHost.InstallLog
+   cpu = 50
+Installing service LongRuninngTaskAsService...
+Service LongRuninngTaskAsService has been successfully installed.
+Creating EventLog source LongRuninngTaskAsService in log Application...
+Committing assembly 'C:\Punit Ganshani\R&D\XecMe\MySample\XecMe.Sample\XecMe.Tasks\XecMeSamples\bin\Debug\XecMeHost.exe'.
+Affected parameters are:
+   assemblypath = C:\Punit Ganshani\R&D\XecMe\MySample\XecMe.Sample\XecMe.Tasks\XecMeSamples\bin\Debug\XecMeHost.exe
+   c = C:\Punit Ganshani\R&D\XecMe\MySample\XecMe.Sample\XecMe.Tasks\XecMeSamples\bin\Debug\LongRuninngTaskAsService.config
+   p = C:\Punit Ganshani\R&D\XecMe\MySample\XecMe.Sample\XecMe.Tasks\XecMeSamples\bin\Debug\XecMeSamples.dll
+   v = 
+   logtoconsole = 
+   i = 
+   n = LongRuninngTaskAsService
+   logfile = C:\Punit Ganshani\R&D\XecMe\MySample\XecMe.Sample\XecMe.Tasks\XecMeSamples\bin\Debug\XecMeHost.InstallLog
+   cpu = 50
+Uninstalling assembly 'C:\Punit Ganshani\R&D\XecMe\MySample\XecMe.Sample\XecMe.Tasks\XecMeSamples\bin\Debug\XecMeHost.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Punit Ganshani\R&D\XecMe\MySample\XecMe.Sample\XecMe.Tasks\XecMeSamples\bin\Debug\XecMeHost.exe
+   n = LongRuninngTaskAsService
+   logfile = C:\Punit Ganshani\R&D\XecMe\MySample\XecMe.Sample\XecMe.Tasks\XecMeSamples\bin\Debug\XecMeHost.InstallLog
+   u = 
+Removing EventLog source LongRuninngTaskAsService.
+Service LongRuninngTaskAsService is being removed from the system...
+Service LongRuninngTaskAsService was successfully removed from the system.
