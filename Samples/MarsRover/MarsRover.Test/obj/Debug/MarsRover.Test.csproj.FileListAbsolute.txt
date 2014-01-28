@@ -1,0 +1,9 @@
+C:\Punit Ganshani\RnD\MarsRover\MarsRover.Test\bin\Debug\MarsRover.Test.dll
+C:\Punit Ganshani\RnD\MarsRover\MarsRover.Test\bin\Debug\MarsRover.Test.pdb
+C:\Punit Ganshani\RnD\MarsRover\MarsRover.Test\bin\Debug\MarsRover.exe
+C:\Punit Ganshani\RnD\MarsRover\MarsRover.Test\bin\Debug\MarsRover.pdb
+C:\Punit Ganshani\RnD\MarsRover\MarsRover.Test\bin\Debug\MarsRover_Accessor.dll
+C:\Punit Ganshani\RnD\MarsRover\MarsRover.Test\bin\Debug\MarsRover_Accessor.pdb
+C:\Punit Ganshani\RnD\MarsRover\MarsRover.Test\obj\Debug\ResolveAssemblyReference.cache
+C:\Punit Ganshani\RnD\MarsRover\MarsRover.Test\obj\Debug\MarsRover.Test.dll
+C:\Punit Ganshani\RnD\MarsRover\MarsRover.Test\obj\Debug\MarsRover.Test.pdb

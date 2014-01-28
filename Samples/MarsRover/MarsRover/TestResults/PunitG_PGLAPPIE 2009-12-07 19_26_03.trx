@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="30e676f2-d68c-40a6-b799-d6cca37bfe0a" name="PunitG@PGLAPPIE 2009-12-07 19:26:03" runUser="pglappie\PunitG" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="9db647ae-55f8-48b5-89c5-d7c944e7c91a">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="PunitG_PGLAPPIE 2009-12-07 19_26_03">
+      <DeploymentItem filename="C:\Punit Ganshani\RnD\MarsRover\MarsRover\bin\Debug\MarsRover.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2009-12-07T19:26:03.6501945+05:30" queuing="2009-12-07T19:26:14.6348227+05:30" start="2009-12-07T19:26:15.6248794+05:30" finish="2009-12-07T19:27:06.4067839+05:30" />
+  <ResultSummary outcome="Error">
+    <Counters total="26" executed="3" passed="2" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="23" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="PGLAPPIE" outcome="Error" timestamp="2009-12-07T19:27:06.3967834+05:30">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TContains2" storage="c:\punit ganshani\rnd\marsrover\marsrover.test\bin\debug\marsrover.test.dll" id="03659cdf-5b48-24ac-4ba0-9befa364a41a">
+      <Execution id="bceea73a-e6bb-4a25-87f3-024a1d627124" />
+      <TestMethod codeBase="C:/Punit Ganshani/RnD/MarsRover/MarsRover.Test/bin/Debug/MarsRover.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarsRover.Test.TPlateau, MarsRover.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TContains2" />
+    </UnitTest>
+    <UnitTest name="TContains4" storage="c:\punit ganshani\rnd\marsrover\marsrover.test\bin\debug\marsrover.test.dll" id="66955178-dac9-d089-445f-447779cdfb5b">
+      <Execution id="2902cd20-a8d5-40a4-a872-b4cae43a6d95" />
+      <TestMethod codeBase="C:/Punit Ganshani/RnD/MarsRover/MarsRover.Test/bin/Debug/MarsRover.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarsRover.Test.TPlateau, MarsRover.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TContains4" />
+    </UnitTest>
+    <UnitTest name="TRoverConstructor2" storage="c:\punit ganshani\rnd\marsrover\marsrover.test\bin\debug\marsrover.test.dll" id="5b8c7f8a-3417-86e9-d8e5-0256549996d4">
+      <Execution id="0f019816-8135-400e-8bd6-ba12782cc2d0" />
+      <TestMethod codeBase="C:/Punit Ganshani/RnD/MarsRover/MarsRover.Test/bin/Debug/MarsRover.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarsRover.Test.TRover, MarsRover.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TRoverConstructor2" />
+    </UnitTest>
+    <UnitTest name="TLocationConstructor1" storage="c:\punit ganshani\rnd\marsrover\marsrover.test\bin\debug\marsrover.test.dll" id="56cdbd55-21b0-fbd5-6349-8661acbcdb88">
+      <Execution id="4a6ae6f1-bf3f-4a6a-b231-2e899b49c5d2" />
+      <TestMethod codeBase="C:/Punit Ganshani/RnD/MarsRover/MarsRover.Test/bin/Debug/MarsRover.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarsRover.Test.TLocation, MarsRover.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TLocationConstructor1" />
+    </UnitTest>
+    <UnitTest name="TMove2" storage="c:\punit ganshani\rnd\marsrover\marsrover.test\bin\debug\marsrover.test.dll" id="d5858a2a-4ad2-72fe-2082-ebebde302370">
+      <Execution id="6a20a724-75a2-4869-ab84-2070791ce6a7" />
+      <TestMethod codeBase="C:/Punit Ganshani/RnD/MarsRover/MarsRover.Test/bin/Debug/MarsRover.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarsRover.Test.TRover, MarsRover.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TMove2" />
+    </UnitTest>
+    <UnitTest name="TLocationConstructor2" storage="c:\punit ganshani\rnd\marsrover\marsrover.test\bin\debug\marsrover.test.dll" id="e529813e-8599-ba3f-bcaa-6179fbbedd07">
+      <Execution id="e7d07292-c8d9-436d-8473-cf4bf42f4869" />
+      <TestMethod codeBase="C:/Punit Ganshani/RnD/MarsRover/MarsRover.Test/bin/Debug/MarsRover.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarsRover.Test.TLocation, MarsRover.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TLocationConstructor2" />
+    </UnitTest>
+    <UnitTest name="TMove" storage="c:\punit ganshani\rnd\marsrover\marsrover.test\bin\debug\marsrover.test.dll" id="1920a5db-e2cd-5411-cd2f-26dfccfa9bfd">
+      <Execution id="8bbaf094-56f7-4c47-817d-85044bcfecbc" />
+      <TestMethod codeBase="C:/Punit Ganshani/RnD/MarsRover/MarsRover.Test/bin/Debug/MarsRover.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarsRover.Test.TRover, MarsRover.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TMove" />
+    </UnitTest>
+    <UnitTest name="TGetLocation2" storage="c:\punit ganshani\rnd\marsrover\marsrover.test\bin\debug\marsrover.test.dll" id="25fe2da7-ed71-785c-cd2d-64b86ebca590">
+      <Execution id="ea0193ac-84a5-46d6-86f9-f91c6510b0de" />
+      <TestMethod codeBase="C:/Punit Ganshani/RnD/MarsRover/MarsRover.Test/bin/Debug/MarsRover.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarsRover.Test.TLocation, MarsRover.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TGetLocation2" />
+    </UnitTest>
+    <UnitTest name="TLocationConstructor3" storage="c:\punit ganshani\rnd\marsrover\marsrover.test\bin\debug\marsrover.test.dll" id="98f5c4c5-e601-e597-e269-908269fb2a8c">
+      <Execution id="1be08566-8804-4e17-b32b-6e533ad03d00" />
+      <TestMethod codeBase="C:/Punit Ganshani/RnD/MarsRover/MarsRover.Test/bin/Debug/MarsRover.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarsRover.Test.TLocation, MarsRover.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TLocationConstructor3" />
+    </UnitTest>
+    <UnitTest name="TContains5" storage="c:\punit ganshani\rnd\marsrover\marsrover.test\bin\debug\marsrover.test.dll" id="95a62257-b67f-f718-c601-fa6105b7da03">
+      <Execution id="d5c8cd62-c0f3-4bab-bbd2-2e40601a2f82" />
+      <TestMethod codeBase="C:/Punit Ganshani/RnD/MarsRover/MarsRover.Test/bin/Debug/MarsRover.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarsRover.Test.TPlateau, MarsRover.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TContains5" />
+    </UnitTest>
+    <UnitTest name="TIsWithinArea" storage="c:\punit ganshani\rnd\marsrover\marsrover.test\bin\debug\marsrover.test.dll" id="127806b6-729d-5f6a-bd30-05df1dd154c3">
+      <Execution id="c68a4b89-a444-4dde-b3e1-9e36241b11a9" />
+      <TestMethod codeBase="C:/Punit Ganshani/RnD/MarsRover/MarsRover.Test/bin/Debug/MarsRover.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarsRover.Test.TPoint, MarsRover.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TIsWithinArea" />
+    </UnitTest>
+    <UnitTest name="TMove1" storage="c:\punit ganshani\rnd\marsrover\marsrover.test\bin\debug\marsrover.test.dll" id="752d3afb-e762-fa72-ebea-3525524c598e">
+      <Execution id="97620b90-7160-4aa7-9440-c7cb73605f76" />
+      <TestMethod codeBase="C:/Punit Ganshani/RnD/MarsRover/MarsRover.Test/bin/Debug/MarsRover.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarsRover.Test.TRover, MarsRover.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TMove1" />
+    </UnitTest>
+    <UnitTest name="TRoverConstructor3" storage="c:\punit ganshani\rnd\marsrover\marsrover.test\bin\debug\marsrover.test.dll" id="babb3e4e-be9b-da4a-5124-133494c0a54f">
+      <Execution id="5e7b3958-2e68-492c-a9a7-ebe47a9b16b2" />
+      <TestMethod codeBase="C:/Punit Ganshani/RnD/MarsRover/MarsRover.Test/bin/Debug/MarsRover.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarsRover.Test.TRover, MarsRover.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TRoverConstructor3" />
+    </UnitTest>
+    <UnitTest name="TRoverConstructor" storage="c:\punit ganshani\rnd\marsrover\marsrover.test\bin\debug\marsrover.test.dll" id="314cae66-f85d-b6ce-591a-589e82493db2">
+      <Execution id="df431a89-dc22-416c-a344-1fa0627739f3" />
+      <TestMethod codeBase="C:/Punit Ganshani/RnD/MarsRover/MarsRover.Test/bin/Debug/MarsRover.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarsRover.Test.TRover, MarsRover.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TRoverConstructor" />
+    </UnitTest>
+    <UnitTest name="TPlateauConstructor1" storage="c:\punit ganshani\rnd\marsrover\marsrover.test\bin\debug\marsrover.test.dll" id="b6f427a6-51db-3c7a-63b6-a18dbddbfb89">
+      <Execution id="1066d3ec-2d81-41bb-a7da-25e3817408d6" />
+      <TestMethod codeBase="C:/Punit Ganshani/RnD/MarsRover/MarsRover.Test/bin/Debug/MarsRover.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarsRover.Test.TPlateau, MarsRover.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TPlateauConstructor1" />
+    </UnitTest>
+    <UnitTest name="TIsWithinArea2" storage="c:\punit ganshani\rnd\marsrover\marsrover.test\bin\debug\marsrover.test.dll" id="e6d8c7ce-9aca-63a7-9547-001737eb4a4f">
+      <Execution id="ed1c56bf-8b08-49f1-ac31-2c9e837033b3" />
+      <TestMethod codeBase="C:/Punit Ganshani/RnD/MarsRover/MarsRover.Test/bin/Debug/MarsRover.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarsRover.Test.TPoint, MarsRover.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TIsWithinArea2" />
+    </UnitTest>
+    <UnitTest name="TPlateauConstructor" storage="c:\punit ganshani\rnd\marsrover\marsrover.test\bin\debug\marsrover.test.dll" id="de9f2f0a-ac84-7af3-4a20-7e3b2a3f3278">
+      <Execution id="65986816-ade3-46aa-8b0d-dffcc143f9af" />
+      <TestMethod codeBase="C:/Punit Ganshani/RnD/MarsRover/MarsRover.Test/bin/Debug/MarsRover.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarsRover.Test.TPlateau, MarsRover.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TPlateauConstructor" />
+    </UnitTest>
+    <UnitTest name="TIsWithinArea4" storage="c:\punit ganshani\rnd\marsrover\marsrover.test\bin\debug\marsrover.test.dll" id="e80e1c4f-ffcb-b0c6-3ed6-b2fa76d2432a">
+      <Execution id="7e63a9fa-0289-4eae-9088-c15d558c7857" />
+      <TestMethod codeBase="C:/Punit Ganshani/RnD/MarsRover/MarsRover.Test/bin/Debug/MarsRover.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarsRover.Test.TPoint, MarsRover.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TIsWithinArea4" />
+    </UnitTest>
+    <UnitTest name="TIsWithinArea1" storage="c:\punit ganshani\rnd\marsrover\marsrover.test\bin\debug\marsrover.test.dll" id="d93d9a08-4d86-ef34-f243-46c7be6ae9df">
+      <Execution id="81e9ce04-727f-4e96-b7e5-b6495c8221e4" />
+      <TestMethod codeBase="C:/Punit Ganshani/RnD/MarsRover/MarsRover.Test/bin/Debug/MarsRover.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarsRover.Test.TPoint, MarsRover.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TIsWithinArea1" />
+    </UnitTest>
+    <UnitTest name="TGetLocation" storage="c:\punit ganshani\rnd\marsrover\marsrover.test\bin\debug\marsrover.test.dll" id="c5a94a6a-fb62-d11e-e2b1-079fe80afd91">
+      <Execution id="3d0e2757-03fb-47ae-ac47-34846d99067d" />
+      <TestMethod codeBase="C:/Punit Ganshani/RnD/MarsRover/MarsRover.Test/bin/Debug/MarsRover.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarsRover.Test.TLocation, MarsRover.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TGetLocation" />
+    </UnitTest>
+    <UnitTest name="TContains1" storage="c:\punit ganshani\rnd\marsrover\marsrover.test\bin\debug\marsrover.test.dll" id="ae7b7a46-49a5-bfae-065f-403e903f73fe">
+      <Execution id="aec81f50-15d9-40fa-8bd4-506aab18b449" />
+      <TestMethod codeBase="C:/Punit Ganshani/RnD/MarsRover/MarsRover.Test/bin/Debug/MarsRover.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarsRover.Test.TPlateau, MarsRover.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TContains1" />
+    </UnitTest>
+    <UnitTest name="TContains3" storage="c:\punit ganshani\rnd\marsrover\marsrover.test\bin\debug\marsrover.test.dll" id="6b18827c-1291-b279-b27a-d5eac94a2488">
+      <Execution id="af95068b-8338-4b4b-8498-177e04e99fc2" />
+      <TestMethod codeBase="C:/Punit Ganshani/RnD/MarsRover/MarsRover.Test/bin/Debug/MarsRover.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarsRover.Test.TPlateau, MarsRover.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TContains3" />
+    </UnitTest>
+    <UnitTest name="TContains6" storage="c:\punit ganshani\rnd\marsrover\marsrover.test\bin\debug\marsrover.test.dll" id="5be2b72e-6901-3099-9c9f-b0247395b028">
+      <Execution id="59bebc31-e989-4886-a974-56656a9cbda8" />
+      <TestMethod codeBase="C:/Punit Ganshani/RnD/MarsRover/MarsRover.Test/bin/Debug/MarsRover.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarsRover.Test.TPlateau, MarsRover.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TContains6" />
+    </UnitTest>
+    <UnitTest name="TContains" storage="c:\punit ganshani\rnd\marsrover\marsrover.test\bin\debug\marsrover.test.dll" id="1fc4bb62-5627-f8b9-2a00-44e671d5dabd">
+      <Execution id="98794b05-8288-464e-9800-0cac94de19bc" />
+      <TestMethod codeBase="C:/Punit Ganshani/RnD/MarsRover/MarsRover.Test/bin/Debug/MarsRover.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarsRover.Test.TPlateau, MarsRover.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TContains" />
+    </UnitTest>
+    <UnitTest name="TLocationConstructor" storage="c:\punit ganshani\rnd\marsrover\marsrover.test\bin\debug\marsrover.test.dll" id="c846d602-3f08-9610-2ccc-493300dc13b4">
+      <Execution id="67899d28-fb8c-4b02-9a56-c4314522e8a2" />
+      <TestMethod codeBase="C:/Punit Ganshani/RnD/MarsRover/MarsRover.Test/bin/Debug/MarsRover.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarsRover.Test.TLocation, MarsRover.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TLocationConstructor" />
+    </UnitTest>
+    <UnitTest name="TIsWithinArea3" storage="c:\punit ganshani\rnd\marsrover\marsrover.test\bin\debug\marsrover.test.dll" id="8a86508a-06ce-2c1b-8407-ac4a910e50b0">
+      <Execution id="50fcaefb-e4b1-4431-9cbc-0af0956f8410" />
+      <TestMethod codeBase="C:/Punit Ganshani/RnD/MarsRover/MarsRover.Test/bin/Debug/MarsRover.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MarsRover.Test.TPoint, MarsRover.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TIsWithinArea3" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="c846d602-3f08-9610-2ccc-493300dc13b4" executionId="67899d28-fb8c-4b02-9a56-c4314522e8a2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c5a94a6a-fb62-d11e-e2b1-079fe80afd91" executionId="3d0e2757-03fb-47ae-ac47-34846d99067d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="25fe2da7-ed71-785c-cd2d-64b86ebca590" executionId="ea0193ac-84a5-46d6-86f9-f91c6510b0de" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1fc4bb62-5627-f8b9-2a00-44e671d5dabd" executionId="98794b05-8288-464e-9800-0cac94de19bc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ae7b7a46-49a5-bfae-065f-403e903f73fe" executionId="aec81f50-15d9-40fa-8bd4-506aab18b449" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="03659cdf-5b48-24ac-4ba0-9befa364a41a" executionId="bceea73a-e6bb-4a25-87f3-024a1d627124" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6b18827c-1291-b279-b27a-d5eac94a2488" executionId="af95068b-8338-4b4b-8498-177e04e99fc2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="66955178-dac9-d089-445f-447779cdfb5b" executionId="2902cd20-a8d5-40a4-a872-b4cae43a6d95" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="95a62257-b67f-f718-c601-fa6105b7da03" executionId="d5c8cd62-c0f3-4bab-bbd2-2e40601a2f82" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5be2b72e-6901-3099-9c9f-b0247395b028" executionId="59bebc31-e989-4886-a974-56656a9cbda8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="de9f2f0a-ac84-7af3-4a20-7e3b2a3f3278" executionId="65986816-ade3-46aa-8b0d-dffcc143f9af" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b6f427a6-51db-3c7a-63b6-a18dbddbfb89" executionId="1066d3ec-2d81-41bb-a7da-25e3817408d6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="127806b6-729d-5f6a-bd30-05df1dd154c3" executionId="c68a4b89-a444-4dde-b3e1-9e36241b11a9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d93d9a08-4d86-ef34-f243-46c7be6ae9df" executionId="81e9ce04-727f-4e96-b7e5-b6495c8221e4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e6d8c7ce-9aca-63a7-9547-001737eb4a4f" executionId="ed1c56bf-8b08-49f1-ac31-2c9e837033b3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8a86508a-06ce-2c1b-8407-ac4a910e50b0" executionId="50fcaefb-e4b1-4431-9cbc-0af0956f8410" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e80e1c4f-ffcb-b0c6-3ed6-b2fa76d2432a" executionId="7e63a9fa-0289-4eae-9088-c15d558c7857" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="314cae66-f85d-b6ce-591a-589e82493db2" executionId="df431a89-dc22-416c-a344-1fa0627739f3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5b8c7f8a-3417-86e9-d8e5-0256549996d4" executionId="0f019816-8135-400e-8bd6-ba12782cc2d0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="babb3e4e-be9b-da4a-5124-133494c0a54f" executionId="5e7b3958-2e68-492c-a9a7-ebe47a9b16b2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1920a5db-e2cd-5411-cd2f-26dfccfa9bfd" executionId="8bbaf094-56f7-4c47-817d-85044bcfecbc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="752d3afb-e762-fa72-ebea-3525524c598e" executionId="97620b90-7160-4aa7-9440-c7cb73605f76" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d5858a2a-4ad2-72fe-2082-ebebde302370" executionId="6a20a724-75a2-4869-ab84-2070791ce6a7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="56cdbd55-21b0-fbd5-6349-8661acbcdb88" executionId="4a6ae6f1-bf3f-4a6a-b231-2e899b49c5d2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e529813e-8599-ba3f-bcaa-6179fbbedd07" executionId="e7d07292-c8d9-436d-8473-cf4bf42f4869" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="98f5c4c5-e601-e597-e269-908269fb2a8c" executionId="1be08566-8804-4e17-b32b-6e533ad03d00" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="67899d28-fb8c-4b02-9a56-c4314522e8a2" testId="c846d602-3f08-9610-2ccc-493300dc13b4" testName="TLocationConstructor" computerName="PGLAPPIE" duration="00:00:00.0417242" startTime="2009-12-07T19:26:16.3449206+05:30" endTime="2009-12-07T19:26:20.4331544+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="67899d28-fb8c-4b02-9a56-c4314522e8a2">
+    </UnitTestResult>
+    <UnitTestResult executionId="3d0e2757-03fb-47ae-ac47-34846d99067d" testId="c5a94a6a-fb62-d11e-e2b1-079fe80afd91" testName="TGetLocation" computerName="PGLAPPIE" duration="00:00:00.0017156" startTime="2009-12-07T19:26:20.4811571+05:30" endTime="2009-12-07T19:26:20.5191593+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3d0e2757-03fb-47ae-ac47-34846d99067d">
+    </UnitTestResult>
+    <UnitTestResult executionId="ea0193ac-84a5-46d6-86f9-f91c6510b0de" testId="25fe2da7-ed71-785c-cd2d-64b86ebca590" testName="TGetLocation2" computerName="PGLAPPIE" duration="00:00:45.8526226" startTime="2009-12-07T19:26:20.5491610+05:30" endTime="2009-12-07T19:27:06.4017836+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ea0193ac-84a5-46d6-86f9-f91c6510b0de">
+    </UnitTestResult>
+    <UnitTestResult executionId="98794b05-8288-464e-9800-0cac94de19bc" testId="1fc4bb62-5627-f8b9-2a00-44e671d5dabd" testName="TContains" computerName="PGLAPPIE" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="98794b05-8288-464e-9800-0cac94de19bc">
+    </UnitTestResult>
+    <UnitTestResult executionId="aec81f50-15d9-40fa-8bd4-506aab18b449" testId="ae7b7a46-49a5-bfae-065f-403e903f73fe" testName="TContains1" computerName="PGLAPPIE" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="aec81f50-15d9-40fa-8bd4-506aab18b449">
+    </UnitTestResult>
+    <UnitTestResult executionId="bceea73a-e6bb-4a25-87f3-024a1d627124" testId="03659cdf-5b48-24ac-4ba0-9befa364a41a" testName="TContains2" computerName="PGLAPPIE" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bceea73a-e6bb-4a25-87f3-024a1d627124">
+    </UnitTestResult>
+    <UnitTestResult executionId="af95068b-8338-4b4b-8498-177e04e99fc2" testId="6b18827c-1291-b279-b27a-d5eac94a2488" testName="TContains3" computerName="PGLAPPIE" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="af95068b-8338-4b4b-8498-177e04e99fc2">
+    </UnitTestResult>
+    <UnitTestResult executionId="2902cd20-a8d5-40a4-a872-b4cae43a6d95" testId="66955178-dac9-d089-445f-447779cdfb5b" testName="TContains4" computerName="PGLAPPIE" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2902cd20-a8d5-40a4-a872-b4cae43a6d95">
+    </UnitTestResult>
+    <UnitTestResult executionId="d5c8cd62-c0f3-4bab-bbd2-2e40601a2f82" testId="95a62257-b67f-f718-c601-fa6105b7da03" testName="TContains5" computerName="PGLAPPIE" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d5c8cd62-c0f3-4bab-bbd2-2e40601a2f82">
+    </UnitTestResult>
+    <UnitTestResult executionId="59bebc31-e989-4886-a974-56656a9cbda8" testId="5be2b72e-6901-3099-9c9f-b0247395b028" testName="TContains6" computerName="PGLAPPIE" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="59bebc31-e989-4886-a974-56656a9cbda8">
+    </UnitTestResult>
+    <UnitTestResult executionId="65986816-ade3-46aa-8b0d-dffcc143f9af" testId="de9f2f0a-ac84-7af3-4a20-7e3b2a3f3278" testName="TPlateauConstructor" computerName="PGLAPPIE" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="65986816-ade3-46aa-8b0d-dffcc143f9af">
+    </UnitTestResult>
+    <UnitTestResult executionId="1066d3ec-2d81-41bb-a7da-25e3817408d6" testId="b6f427a6-51db-3c7a-63b6-a18dbddbfb89" testName="TPlateauConstructor1" computerName="PGLAPPIE" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1066d3ec-2d81-41bb-a7da-25e3817408d6">
+    </UnitTestResult>
+    <UnitTestResult executionId="c68a4b89-a444-4dde-b3e1-9e36241b11a9" testId="127806b6-729d-5f6a-bd30-05df1dd154c3" testName="TIsWithinArea" computerName="PGLAPPIE" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c68a4b89-a444-4dde-b3e1-9e36241b11a9">
+    </UnitTestResult>
+    <UnitTestResult executionId="81e9ce04-727f-4e96-b7e5-b6495c8221e4" testId="d93d9a08-4d86-ef34-f243-46c7be6ae9df" testName="TIsWithinArea1" computerName="PGLAPPIE" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="81e9ce04-727f-4e96-b7e5-b6495c8221e4">
+    </UnitTestResult>
+    <UnitTestResult executionId="ed1c56bf-8b08-49f1-ac31-2c9e837033b3" testId="e6d8c7ce-9aca-63a7-9547-001737eb4a4f" testName="TIsWithinArea2" computerName="PGLAPPIE" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ed1c56bf-8b08-49f1-ac31-2c9e837033b3">
+    </UnitTestResult>
+    <UnitTestResult executionId="50fcaefb-e4b1-4431-9cbc-0af0956f8410" testId="8a86508a-06ce-2c1b-8407-ac4a910e50b0" testName="TIsWithinArea3" computerName="PGLAPPIE" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="50fcaefb-e4b1-4431-9cbc-0af0956f8410">
+    </UnitTestResult>
+    <UnitTestResult executionId="7e63a9fa-0289-4eae-9088-c15d558c7857" testId="e80e1c4f-ffcb-b0c6-3ed6-b2fa76d2432a" testName="TIsWithinArea4" computerName="PGLAPPIE" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7e63a9fa-0289-4eae-9088-c15d558c7857">
+    </UnitTestResult>
+    <UnitTestResult executionId="df431a89-dc22-416c-a344-1fa0627739f3" testId="314cae66-f85d-b6ce-591a-589e82493db2" testName="TRoverConstructor" computerName="PGLAPPIE" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="df431a89-dc22-416c-a344-1fa0627739f3">
+    </UnitTestResult>
+    <UnitTestResult executionId="0f019816-8135-400e-8bd6-ba12782cc2d0" testId="5b8c7f8a-3417-86e9-d8e5-0256549996d4" testName="TRoverConstructor2" computerName="PGLAPPIE" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0f019816-8135-400e-8bd6-ba12782cc2d0">
+    </UnitTestResult>
+    <UnitTestResult executionId="5e7b3958-2e68-492c-a9a7-ebe47a9b16b2" testId="babb3e4e-be9b-da4a-5124-133494c0a54f" testName="TRoverConstructor3" computerName="PGLAPPIE" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5e7b3958-2e68-492c-a9a7-ebe47a9b16b2">
+    </UnitTestResult>
+    <UnitTestResult executionId="8bbaf094-56f7-4c47-817d-85044bcfecbc" testId="1920a5db-e2cd-5411-cd2f-26dfccfa9bfd" testName="TMove" computerName="PGLAPPIE" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8bbaf094-56f7-4c47-817d-85044bcfecbc">
+    </UnitTestResult>
+    <UnitTestResult executionId="97620b90-7160-4aa7-9440-c7cb73605f76" testId="752d3afb-e762-fa72-ebea-3525524c598e" testName="TMove1" computerName="PGLAPPIE" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="97620b90-7160-4aa7-9440-c7cb73605f76">
+    </UnitTestResult>
+    <UnitTestResult executionId="6a20a724-75a2-4869-ab84-2070791ce6a7" testId="d5858a2a-4ad2-72fe-2082-ebebde302370" testName="TMove2" computerName="PGLAPPIE" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6a20a724-75a2-4869-ab84-2070791ce6a7">
+    </UnitTestResult>
+    <UnitTestResult executionId="4a6ae6f1-bf3f-4a6a-b231-2e899b49c5d2" testId="56cdbd55-21b0-fbd5-6349-8661acbcdb88" testName="TLocationConstructor1" computerName="PGLAPPIE" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4a6ae6f1-bf3f-4a6a-b231-2e899b49c5d2">
+    </UnitTestResult>
+    <UnitTestResult executionId="e7d07292-c8d9-436d-8473-cf4bf42f4869" testId="e529813e-8599-ba3f-bcaa-6179fbbedd07" testName="TLocationConstructor2" computerName="PGLAPPIE" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e7d07292-c8d9-436d-8473-cf4bf42f4869">
+    </UnitTestResult>
+    <UnitTestResult executionId="1be08566-8804-4e17-b32b-6e533ad03d00" testId="98f5c4c5-e601-e597-e269-908269fb2a8c" testName="TLocationConstructor3" computerName="PGLAPPIE" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1be08566-8804-4e17-b32b-6e533ad03d00">
+    </UnitTestResult>
+  </Results>
+</TestRun>
