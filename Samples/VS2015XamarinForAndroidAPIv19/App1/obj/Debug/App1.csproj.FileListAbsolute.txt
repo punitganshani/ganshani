@@ -1,0 +1,14 @@
+C:\Users\Puneet\Documents\Visual Studio 14\Projects\Xamarin1\App1\bin\Debug\App1.dll
+C:\Users\Puneet\Documents\Visual Studio 14\Projects\Xamarin1\App1\bin\Debug\App1.pdb
+C:\Users\Puneet\Documents\Visual Studio 14\Projects\Xamarin1\App1\bin\Debug\App1.dll.mdb
+C:\Users\Puneet\Documents\Visual Studio 14\Projects\Xamarin1\App1\bin\Debug\App1.App1.apk
+C:\Users\Puneet\Documents\Visual Studio 14\Projects\Xamarin1\App1\bin\Debug\App1.App1-Signed.apk
+C:\Users\Puneet\Documents\Visual Studio 14\Projects\Xamarin1\App1\obj\Debug\App1.csprojResolveAssemblyReference.cache
+C:\Users\Puneet\Documents\Visual Studio 14\Projects\Xamarin1\App1\obj\Debug\App1.dll
+C:\Users\Puneet\Documents\Visual Studio 14\Projects\Xamarin1\App1\obj\Debug\App1.pdb
+C:\Users\Puneet\Documents\Visual Studio 14\Projects\Xamarin1\App1\obj\Debug\android\bin\App1.App1.apk
+C:\Users\Puneet\Documents\Visual Studio 14\Projects\Xamarin1\App1\obj\Debug\res\layout\main.xml
+C:\Users\Puneet\Documents\Visual Studio 14\Projects\Xamarin1\App1\obj\Debug\res\values\strings.xml
+C:\Users\Puneet\Documents\Visual Studio 14\Projects\Xamarin1\App1\obj\Debug\res\drawable\icon.png
+C:\Users\Puneet\Documents\Visual Studio 14\Projects\Xamarin1\App1\obj\Debug\R.cs.flag
+C:\Users\Puneet\Documents\Visual Studio 14\Projects\Xamarin1\App1\obj\Debug\uploadflags.txt
