@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.22310.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeatureSample", "FeatureSample\FeatureSample.csproj", "{D67254CF-DF13-4FBD-A533-2D61A1253CFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfSample", "WpfSample\WpfSample.csproj", "{E5DF24A4-A220-41BF-B4E5-2E5477114F95}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D67254CF-DF13-4FBD-A533-2D61A1253CFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D67254CF-DF13-4FBD-A533-2D61A1253CFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D67254CF-DF13-4FBD-A533-2D61A1253CFF}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{D67254CF-DF13-4FBD-A533-2D61A1253CFF}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{D67254CF-DF13-4FBD-A533-2D61A1253CFF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D67254CF-DF13-4FBD-A533-2D61A1253CFF}.Debug|x86.Build.0 = Debug|Any CPU
+		{D67254CF-DF13-4FBD-A533-2D61A1253CFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D67254CF-DF13-4FBD-A533-2D61A1253CFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D67254CF-DF13-4FBD-A533-2D61A1253CFF}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{D67254CF-DF13-4FBD-A533-2D61A1253CFF}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{D67254CF-DF13-4FBD-A533-2D61A1253CFF}.Release|x86.ActiveCfg = Release|Any CPU
+		{D67254CF-DF13-4FBD-A533-2D61A1253CFF}.Release|x86.Build.0 = Release|Any CPU
+		{E5DF24A4-A220-41BF-B4E5-2E5477114F95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5DF24A4-A220-41BF-B4E5-2E5477114F95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5DF24A4-A220-41BF-B4E5-2E5477114F95}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{E5DF24A4-A220-41BF-B4E5-2E5477114F95}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{E5DF24A4-A220-41BF-B4E5-2E5477114F95}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E5DF24A4-A220-41BF-B4E5-2E5477114F95}.Debug|x86.Build.0 = Debug|Any CPU
+		{E5DF24A4-A220-41BF-B4E5-2E5477114F95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5DF24A4-A220-41BF-B4E5-2E5477114F95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5DF24A4-A220-41BF-B4E5-2E5477114F95}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{E5DF24A4-A220-41BF-B4E5-2E5477114F95}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{E5DF24A4-A220-41BF-B4E5-2E5477114F95}.Release|x86.ActiveCfg = Release|Any CPU
+		{E5DF24A4-A220-41BF-B4E5-2E5477114F95}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = MarsRover.vsmdi
+	EndGlobalSection
+EndGlobal
