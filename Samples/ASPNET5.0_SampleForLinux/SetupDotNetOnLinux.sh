@@ -14,8 +14,6 @@ if [ -z $VERSION ]; then
 fi
 
 
-sudo apt-get autoremove mono-complete
-
 sudo apt-get install make
 sudo apt-get install git autoconf libtool automake build-essential mono-devel gettext zip unzip
 sudo apt-get install bash zsh curl
