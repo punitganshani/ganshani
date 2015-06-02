@@ -34,7 +34,7 @@ sudo certmgr -ssl -m https://nugetgallery.blob.core.windows.net
 sudo certmgr -ssl -m https://nuget.org
 sudo certmgr -ssl -m https://www.myget.org/F/aspnetvnext/
 
-mozroots --import –sync
+mozroots --import --sync
 
 wget http://dist.libuv.org/dist/v1.0.0-rc1/libuv-v1.0.0-rc1.tar.gz 
 tar -xvf libuv-v1.0.0-rc1.tar.gz
